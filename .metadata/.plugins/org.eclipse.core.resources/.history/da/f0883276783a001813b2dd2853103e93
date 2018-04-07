@@ -1,0 +1,24 @@
+/*
+ * Tablica.cpp
+ *
+ *  Created on: 7 kwi 2018
+ *      Author: kuba
+ */
+
+#include "Tablica.h"
+#include <iostream>
+
+using namespace std;
+
+Tablica::Tablica() {
+
+	Tablica::head=NULL;
+	Tablica::rozmiar;
+
+
+}
+
+Tablica::~Tablica() {
+
+}
+

@@ -1,0 +1,60 @@
+17:25:46 **** Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/SDiZO Project.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDiZO Project.d" -MT"src/SDiZO\ Project.d" -o "src/SDiZO Project.o" "../src/SDiZO Project.cpp"
+Finished building: ../src/SDiZO Project.cpp
+ 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+Finished building: ../src/Tablica.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/SDiZO\ Project.o ./src/Tablica.o   
+Finished building target: SDiZO Project
+ 
+17:25:50 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/SDiZO Project.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDiZO Project.d" -MT"src/SDiZO\ Project.d" -o "src/SDiZO Project.o" "../src/SDiZO Project.cpp"
+Finished building: ../src/SDiZO Project.cpp
+ 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+In file included from ../src/Tablica.cpp:8:0:
+../src/Tablica.h:29:1: error: expected unqualified-id before ‘}’ token
+ };
+ ^
+../src/Tablica.cpp: In constructor ‘Tablica::Tablica()’:
+../src/Tablica.cpp:16:11: warning: statement has no effect [-Wunused-value]
+  Tablica::rozmiar;
+           ^
+src/subdir.mk:28: polecenia dla obiektu 'src/Tablica.o' nie powiodły się
+make: *** [src/Tablica.o] Błąd 1
+17:29:28 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+In file included from ../src/Tablica.cpp:8:0:
+../src/Tablica.h:31:1: error: expected ‘;’ after class definition
+ }
+ ^
+make: *** [src/Tablica.o] Błąd 1
+src/subdir.mk:28: polecenia dla obiektu 'src/Tablica.o' nie powiodły się
+17:29:47 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+Finished building: ../src/Tablica.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/SDiZO\ Project.o ./src/Tablica.o   
+Finished building target: SDiZO Project
+ 

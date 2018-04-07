@@ -1,0 +1,18 @@
+/*
+ * Tablica.cpp
+ *
+ *  Created on: 7 kwi 2018
+ *      Author: kuba
+ */
+
+#include "Tablica.h"
+
+Tablica::Tablica() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Tablica::~Tablica() {
+	// TODO Auto-generated destructor stub
+}
+
