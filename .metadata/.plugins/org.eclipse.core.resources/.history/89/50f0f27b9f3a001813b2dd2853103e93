@@ -40,7 +40,7 @@ void Tablica::dodajPoczatek(int wartosc){
 	}
 
 	delete head;								//zwolnienie pamięci poprzedniej tablicy
-	head=nowyHead;								//nowy wskaznik na poczatek tablicy
+	head=nowyHead								//nowy wskaznik na poczatek tablicy
 
 	rozmiar++;									//powiekszenie rozmiaru tablicy o 1
 }
@@ -49,10 +49,10 @@ void Tablica::dodajPoczatek(int wartosc){
 void Tablica::dodajGdzies(int wartosc, int miejsce){
 
 	if(miejsce > rozmiar||miejsce<0){						//sprawdzenie czy poprawnie podane miejsce
-		cout<<"Nie ma takiego miejsca w tablicy";
+		cout<<"Nie ma takiego miejsca w tablicy"
 	}
 	else{
-		int *nowyHead= new int[rozmiar+1];					//nowa tablica o 1 większa
+		int *nowyHead= new int[rozmiar+1]					//nowa tablica o 1 większa
 		nowyHead[miejsce]=wartosc;						//podana wartość zostaje wpisana do nowej tablicy
 		for(int i=0; i<miejsce;i++){
 			nowyHead[i]=head[i];						//przepisanie do nowej tablicy do wybranego miejsca
@@ -95,7 +95,7 @@ void Tablica::usunPoczatek(){
 		rozmiar--;
 	}
 	else{
-		cout<<"Brak wartości w tablicy";
+		cout<<"Brak wartości w tablicy"
 	}
 }
 
@@ -146,7 +146,7 @@ bool Tablica::czyIstnieje(int wartosc){
 
 	for(int i=0;i<rozmiar;i++){
 		if(head[i]==wartosc){
-			cout<<"Podana wartość jest w tablicy na miejscu["<<i<<"]"<<"\n";			//jezeli wartosc jest w tablicy zwracamy true
+			cout<<"Podana wartość jest w tablicy \n";			//jezeli wartosc jest w tablicy zwracamy true
 			return true;
 		}
 	}
@@ -165,7 +165,7 @@ void Tablica::wyswietlTablice(){
 
 	}
 	else{
-		cout<<"Tablica jest pusta \n";
+		cout<<"Tablica jest pusta \n"
 	}
 
 }

@@ -1,15 +1,15 @@
-17:29:47 **** Incremental Build of configuration Debug for project SDiZO Project ****
+23:26:12 **** Incremental Build of configuration Debug for project SDiZO Project ****
 make all 
-Building file: ../src/Tablica.cpp
+Building file: ../src/Kopiec.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
-Finished building: ../src/Tablica.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
  
 Building target: SDiZO Project
 Invoking: GCC C++ Linker
-g++  -o "SDiZO Project"  ./src/SDiZO\ Project.o ./src/Tablica.o   
+g++  -o "SDiZO Project"  ./src/Kopiec.o ./src/Lista.o ./src/SDiZO\ Project.o ./src/Tablica.o   
 Finished building target: SDiZO Project
  
 
-17:29:47 Build Finished (took 517ms)
+23:26:12 Build Finished (took 575ms)
 

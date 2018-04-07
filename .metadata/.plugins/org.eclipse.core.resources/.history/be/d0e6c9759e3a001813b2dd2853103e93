@@ -13,17 +13,16 @@ public:
 
 	int *head;					//wskaznik na glowe
 	int rozmiar;				//rozmiar tablicy
-
 	Tablica();
 	~Tablica();
 
 	void dodajPoczatek(int wartosc);
-	void dodajGdzies(int wartosc, int miejsce);
 	void dodajKoniec(int wartosc);
+	void dodajGdzies(int wartosc, int miejsce);
 
 	void usunPoczatek();
-	void usunGdzies(int miejsce);
 	void usunKoniec();
+	void usunGdzies(int miejsce);
 
 	bool czyIstnieje(int wartosc);
 	void wyswietlTablice();

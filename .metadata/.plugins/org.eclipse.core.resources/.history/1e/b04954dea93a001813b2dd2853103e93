@@ -40,7 +40,7 @@ void Tablica::dodajPoczatek(int wartosc){
 	}
 
 	delete head;								//zwolnienie pamięci poprzedniej tablicy
-	head=nowyHead;								//nowy wskaznik na poczatek tablicy
+	head=nowyHead								//nowy wskaznik na poczatek tablicy
 
 	rozmiar++;									//powiekszenie rozmiaru tablicy o 1
 }

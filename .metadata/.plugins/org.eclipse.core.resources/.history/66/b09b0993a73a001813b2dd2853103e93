@@ -1,0 +1,40 @@
+/*
+ * Kopiec.cpp
+ *
+ *  Created on: 7 kwi 2018
+ *      Author: kuba
+ */
+
+#include "Kopiec.h"
+#include <iostream>
+
+using namespace std;
+
+Kopiec::Kopiec() {
+	Kopiec::zbior=NULL;
+	Kopiec::rozmiar=0;
+}
+
+Kopiec::~Kopiec() {
+	if(Kopiec::rozmiar>0){
+		delete[]zbior;
+	}
+}
+
+bool Kopiec::czyIstnieje(int wartosc){
+
+	for(int i=0;i<rozmiar;i++){
+		if(zbior[i]==wartosc){
+			cout<<"Podana wartość jest w zbiorze kopca na miejscu["<<i<<"]"<<"\n";
+			return true;
+		}
+	}
+	cout<<"Brak szukanej wartosci \n";
+	return false;
+}
+
+
+void Kopiec::dodaj(int wartosc){
+	if()
+}
+

@@ -12,8 +12,6 @@ class Lista {
 public:
 	Lista();
 	virtual ~Lista();
-
-
 };
 
 #endif /* LISTA_H_ */

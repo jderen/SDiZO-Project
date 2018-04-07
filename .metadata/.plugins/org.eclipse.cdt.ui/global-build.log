@@ -58,3 +58,225 @@ Invoking: GCC C++ Linker
 g++  -o "SDiZO Project"  ./src/SDiZO\ Project.o ./src/Tablica.o   
 Finished building target: SDiZO Project
  
+22:01:29 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
+ 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+Finished building: ../src/Lista.cpp
+ 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+../src/Tablica.cpp: In member function ‘void Tablica::dodajPoczatek(int)’:
+../src/Tablica.cpp:45:2: error: expected ‘;’ before ‘rozmiar’
+  rozmiar++;         //powiekszenie rozmiaru tablicy o 1
+  ^
+../src/Tablica.cpp: In member function ‘void Tablica::dodajGdzies(int, int)’:
+../src/Tablica.cpp:53:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+../src/Tablica.cpp:56:3: error: expected ‘,’ or ‘;’ before ‘nowyHead’
+   nowyHead[miejsce]=wartosc;      //podana wartość zostaje wpisana do nowej tablicy
+   ^
+../src/Tablica.cpp: In member function ‘void Tablica::usunPoczatek()’:
+../src/Tablica.cpp:99:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+../src/Tablica.cpp: In member function ‘void Tablica::wyswietlTablice()’:
+../src/Tablica.cpp:169:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+src/subdir.mk:27: polecenia dla obiektu 'src/Tablica.o' nie powiodły się
+make: *** [src/Tablica.o] Błąd 1
+22:08:49 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+../src/Kopiec.cpp: In member function ‘bool Kopiec::czyIstnieje(int)’:
+../src/Kopiec.cpp:26:15: warning: left operand of comma operator has no effect [-Wunused-value]
+  for(int i=0;i<rozmiar,i++){
+               ^
+../src/Kopiec.cpp:26:27: error: expected ‘;’ before ‘)’ token
+  for(int i=0;i<rozmiar,i++){
+                           ^
+../src/Kopiec.cpp: In member function ‘void Kopiec::dodaj(int)’:
+../src/Kopiec.cpp:38:5: error: expected primary-expression before ‘)’ token
+  if()
+     ^
+../src/Kopiec.cpp:39:1: error: expected primary-expression before ‘}’ token
+ }
+ ^
+src/subdir.mk:27: polecenia dla obiektu 'src/Kopiec.o' nie powiodły się
+make: *** [src/Kopiec.o] Błąd 1
+22:09:07 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+../src/Kopiec.cpp: In member function ‘void Kopiec::dodaj(int)’:
+../src/Kopiec.cpp:38:5: error: expected primary-expression before ‘)’ token
+  if()
+     ^
+../src/Kopiec.cpp:39:1: error: expected primary-expression before ‘}’ token
+ }
+ ^
+src/subdir.mk:27: polecenia dla obiektu 'src/Kopiec.o' nie powiodły się
+make: *** [src/Kopiec.o] Błąd 1
+23:06:43 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
+ 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+../src/Tablica.cpp: In member function ‘void Tablica::dodajPoczatek(int)’:
+../src/Tablica.cpp:45:2: error: expected ‘;’ before ‘rozmiar’
+  rozmiar++;         //powiekszenie rozmiaru tablicy o 1
+  ^
+../src/Tablica.cpp: In member function ‘void Tablica::dodajGdzies(int, int)’:
+../src/Tablica.cpp:53:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+../src/Tablica.cpp:56:3: error: expected ‘,’ or ‘;’ before ‘nowyHead’
+   nowyHead[miejsce]=wartosc;      //podana wartość zostaje wpisana do nowej tablicy
+   ^
+../src/Tablica.cpp: In member function ‘void Tablica::usunPoczatek()’:
+../src/Tablica.cpp:99:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+../src/Tablica.cpp: In member function ‘void Tablica::wyswietlTablice()’:
+../src/Tablica.cpp:169:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+src/subdir.mk:27: polecenia dla obiektu 'src/Tablica.o' nie powiodły się
+make: *** [src/Tablica.o] Błąd 1
+23:21:51 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+../src/Kopiec.cpp: In member function ‘void Kopiec::usun(int)’:
+../src/Kopiec.cpp:67:15: warning: left operand of comma operator has no effect [-Wunused-value]
+  for(int i=0;i<rozmiar,i++){       //szukamy podanej wartosci
+               ^
+../src/Kopiec.cpp:67:27: error: expected ‘;’ before ‘)’ token
+  for(int i=0;i<rozmiar,i++){       //szukamy podanej wartosci
+                           ^
+src/subdir.mk:27: polecenia dla obiektu 'src/Kopiec.o' nie powiodły się
+make: *** [src/Kopiec.o] Błąd 1
+23:22:07 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
+ 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+../src/Tablica.cpp: In member function ‘void Tablica::dodajPoczatek(int)’:
+../src/Tablica.cpp:45:2: error: expected ‘;’ before ‘rozmiar’
+  rozmiar++;         //powiekszenie rozmiaru tablicy o 1
+  ^
+../src/Tablica.cpp: In member function ‘void Tablica::dodajGdzies(int, int)’:
+../src/Tablica.cpp:53:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+../src/Tablica.cpp:56:3: error: expected ‘,’ or ‘;’ before ‘nowyHead’
+   nowyHead[miejsce]=wartosc;      //podana wartość zostaje wpisana do nowej tablicy
+   ^
+../src/Tablica.cpp: In member function ‘void Tablica::usunPoczatek()’:
+../src/Tablica.cpp:99:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+../src/Tablica.cpp: In member function ‘void Tablica::wyswietlTablice()’:
+../src/Tablica.cpp:169:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+make: *** [src/Tablica.o] Błąd 1
+src/subdir.mk:27: polecenia dla obiektu 'src/Tablica.o' nie powiodły się
+23:22:23 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+../src/Tablica.cpp: In member function ‘void Tablica::dodajPoczatek(int)’:
+../src/Tablica.cpp:45:2: error: expected ‘;’ before ‘rozmiar’
+  rozmiar++;         //powiekszenie rozmiaru tablicy o 1
+  ^
+../src/Tablica.cpp: In member function ‘void Tablica::dodajGdzies(int, int)’:
+../src/Tablica.cpp:53:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+../src/Tablica.cpp:56:3: error: expected ‘,’ or ‘;’ before ‘nowyHead’
+   nowyHead[miejsce]=wartosc;      //podana wartość zostaje wpisana do nowej tablicy
+   ^
+../src/Tablica.cpp: In member function ‘void Tablica::usunPoczatek()’:
+../src/Tablica.cpp:99:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+make: *** [src/Tablica.o] Błąd 1
+src/subdir.mk:27: polecenia dla obiektu 'src/Tablica.o' nie powiodły się
+23:22:38 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+../src/Tablica.cpp: In member function ‘void Tablica::dodajPoczatek(int)’:
+../src/Tablica.cpp:45:2: error: expected ‘;’ before ‘rozmiar’
+  rozmiar++;         //powiekszenie rozmiaru tablicy o 1
+  ^
+../src/Tablica.cpp: In member function ‘void Tablica::dodajGdzies(int, int)’:
+../src/Tablica.cpp:53:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+../src/Tablica.cpp:56:3: error: expected ‘,’ or ‘;’ before ‘nowyHead’
+   nowyHead[miejsce]=wartosc;      //podana wartość zostaje wpisana do nowej tablicy
+   ^
+src/subdir.mk:27: polecenia dla obiektu 'src/Tablica.o' nie powiodły się
+make: *** [src/Tablica.o] Błąd 1
+23:22:56 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+../src/Tablica.cpp: In member function ‘void Tablica::dodajPoczatek(int)’:
+../src/Tablica.cpp:45:2: error: expected ‘;’ before ‘rozmiar’
+  rozmiar++;         //powiekszenie rozmiaru tablicy o 1
+  ^
+src/subdir.mk:27: polecenia dla obiektu 'src/Tablica.o' nie powiodły się
+make: *** [src/Tablica.o] Błąd 1
+23:23:09 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+Finished building: ../src/Tablica.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Kopiec.o ./src/Lista.o ./src/SDiZO\ Project.o ./src/Tablica.o   
+Finished building target: SDiZO Project
+ 
+23:26:12 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Kopiec.o ./src/Lista.o ./src/SDiZO\ Project.o ./src/Tablica.o   
+Finished building target: SDiZO Project
+ 

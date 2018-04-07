@@ -1,0 +1,17 @@
+/*
+ * Kopiec.h
+ *
+ *  Created on: 7 kwi 2018
+ *      Author: kuba
+ */
+
+#ifndef KOPIEC_H_
+#define KOPIEC_H_
+
+class Kopiec {
+public:
+	Kopiec();
+	virtual ~Kopiec();
+};
+
+#endif /* KOPIEC_H_ */
