@@ -1,0 +1,16 @@
+
+
+#include "Lista.h"
+
+Lista::Lista() {
+	Lista::rozmiar=0;
+	Lista::poczatek=NULL;
+	Lista::obecny=NULL;
+	Lista::koniec=NULL;
+
+}
+
+Lista::~Lista() {
+	// TODO Auto-generated destructor stub
+}
+

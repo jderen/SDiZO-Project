@@ -1,0 +1,17 @@
+/*
+ * ListaElement.h
+ *
+ *  Created on: 8 kwi 2018
+ *      Author: kuba
+ */
+
+#ifndef LISTAELEMENT_H_
+#define LISTAELEMENT_H_
+
+class ListaElement {
+public:
+	ListaElement();
+	virtual ~ListaElement();
+};
+
+#endif /* LISTAELEMENT_H_ */

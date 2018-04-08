@@ -1,0 +1,16 @@
+
+
+#ifndef LISTA_H_
+#define LISTA_H_
+
+class Lista {
+public:
+
+
+	Lista();
+	virtual ~Lista();
+
+
+};
+
+#endif /* LISTA_H_ */

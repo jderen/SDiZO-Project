@@ -1,9 +1,3 @@
-/*
- * Tablica.cpp
- *
- *  Created on: 7 kwi 2018
- *      Author: kuba
- */
 
 
 //dodaj nowe linie

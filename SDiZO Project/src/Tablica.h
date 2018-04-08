@@ -1,9 +1,3 @@
-/*
- * Tablica.h
- *
- *  Created on: 7 kwi 2018
- *      Author: kuba
- */
 
 #ifndef TABLICA_H_
 #define TABLICA_H_

@@ -1,9 +1,4 @@
-/*
- * Kopiec.cpp
- *
- *  Created on: 7 kwi 2018
- *      Author: kuba
- */
+
 
 #include "Kopiec.h"
 #include <iostream>

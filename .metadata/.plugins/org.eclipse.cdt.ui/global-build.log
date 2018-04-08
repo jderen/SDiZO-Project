@@ -280,3 +280,139 @@ Invoking: GCC C++ Linker
 g++  -o "SDiZO Project"  ./src/Kopiec.o ./src/Lista.o ./src/SDiZO\ Project.o ./src/Tablica.o   
 Finished building target: SDiZO Project
  
+00:45:52 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
+ 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+Finished building: ../src/Lista.cpp
+ 
+Building file: ../src/ListaElement.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ListaElement.d" -MT"src/ListaElement.o" -o "src/ListaElement.o" "../src/ListaElement.cpp"
+Finished building: ../src/ListaElement.cpp
+ 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+Finished building: ../src/Tablica.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/SDiZO\ Project.o ./src/Tablica.o   
+Finished building target: SDiZO Project
+ 
+00:46:03 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/ListaElement.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ListaElement.d" -MT"src/ListaElement.o" -o "src/ListaElement.o" "../src/ListaElement.cpp"
+Finished building: ../src/ListaElement.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/SDiZO\ Project.o ./src/Tablica.o   
+Finished building target: SDiZO Project
+ 
+10:16:24 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+In file included from ../src/Lista.cpp:3:0:
+../src/Lista.h:13:6: error: expected ‘;’ at end of member declaration
+  int rozmiar
+      ^
+src/subdir.mk:30: polecenia dla obiektu 'src/Lista.o' nie powiodły się
+make: *** [src/Lista.o] Błąd 1
+10:17:09 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+In file included from ../src/Lista.cpp:3:0:
+../src/Lista.h:13:6: error: expected ‘;’ at end of member declaration
+  int rozmiar
+      ^
+../src/Lista.cpp: In destructor ‘virtual Lista::~Lista()’:
+../src/Lista.cpp:14:35: error: expected primary-expression before ‘)’ token
+  for(int i=0;i<Lista::rozmiar;i+++){
+                                   ^
+src/subdir.mk:30: polecenia dla obiektu 'src/Lista.o' nie powiodły się
+make: *** [src/Lista.o] Błąd 1
+10:17:27 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+In file included from ../src/Lista.cpp:3:0:
+../src/Lista.h:13:6: error: expected ‘;’ at end of member declaration
+  int rozmiar
+      ^
+make: *** [src/Lista.o] Błąd 1
+src/subdir.mk:30: polecenia dla obiektu 'src/Lista.o' nie powiodły się
+13:16:09 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+../src/Lista.cpp: In member function ‘void Lista::usunPoczatek()’:
+../src/Lista.cpp:84:2: error: expected ‘;’ before ‘delete’
+  delete poczatek;
+  ^
+make: *** [src/Lista.o] Błąd 1
+src/subdir.mk:30: polecenia dla obiektu 'src/Lista.o' nie powiodły się
+13:16:30 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+Finished building: ../src/Lista.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/SDiZO\ Project.o ./src/Tablica.o   
+Finished building target: SDiZO Project
+ 
+13:50:00 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+../src/Lista.cpp:155:70: warning: missing terminating " character
+    cout<<"Podana wartość jest na liscie na miejscu["<<i<<"]"<<"\n";"
+                                                                      ^
+../src/Lista.cpp:155:4: error: missing terminating " character
+    cout<<"Podana wartość jest na liscie na miejscu["<<i<<"]"<<"\n";"
+    ^
+src/subdir.mk:30: polecenia dla obiektu 'src/Lista.o' nie powiodły się
+make: *** [src/Lista.o] Błąd 1
+13:50:30 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+Finished building: ../src/Lista.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/SDiZO\ Project.o ./src/Tablica.o   
+Finished building target: SDiZO Project
+ 
+13:53:03 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+Finished building: ../src/Lista.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/SDiZO\ Project.o ./src/Tablica.o   
+Finished building target: SDiZO Project
+ 

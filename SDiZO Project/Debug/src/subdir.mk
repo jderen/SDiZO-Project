@@ -6,18 +6,21 @@
 CPP_SRCS += \
 ../src/Kopiec.cpp \
 ../src/Lista.cpp \
+../src/ListaElement.cpp \
 ../src/SDiZO\ Project.cpp \
 ../src/Tablica.cpp 
 
 OBJS += \
 ./src/Kopiec.o \
 ./src/Lista.o \
+./src/ListaElement.o \
 ./src/SDiZO\ Project.o \
 ./src/Tablica.o 
 
 CPP_DEPS += \
 ./src/Kopiec.d \
 ./src/Lista.d \
+./src/ListaElement.d \
 ./src/SDiZO\ Project.d \
 ./src/Tablica.d 
 
