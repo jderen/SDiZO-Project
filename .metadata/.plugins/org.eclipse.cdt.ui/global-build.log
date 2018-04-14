@@ -416,3 +416,1264 @@ Invoking: GCC C++ Linker
 g++  -o "SDiZO Project"  ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/SDiZO\ Project.o ./src/Tablica.o   
 Finished building target: SDiZO Project
  
+16:39:11 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Drzewo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Drzewo.d" -MT"src/Drzewo.o" -o "src/Drzewo.o" "../src/Drzewo.cpp"
+Finished building: ../src/Drzewo.cpp
+ 
+Building file: ../src/DrzewoElement.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DrzewoElement.d" -MT"src/DrzewoElement.o" -o "src/DrzewoElement.o" "../src/DrzewoElement.cpp"
+Finished building: ../src/DrzewoElement.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/SDiZO\ Project.o ./src/Tablica.o   
+Finished building target: SDiZO Project
+ 
+18:15:38 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Drzewo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Drzewo.d" -MT"src/Drzewo.o" -o "src/Drzewo.o" "../src/Drzewo.cpp"
+../src/Drzewo.cpp: In member function ‘void Drzewo::dodaj(int)’:
+../src/Drzewo.cpp:24:21: warning: unused variable ‘Y’ [-Wunused-variable]
+  DrzewoElement *X, *Y;
+                     ^
+Finished building: ../src/Drzewo.cpp
+ 
+Building file: ../src/Testowanie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Testowanie.d" -MT"src/Testowanie.o" -o "src/Testowanie.o" "../src/Testowanie.cpp"
+../src/Testowanie.cpp:2:28: fatal error: MierzenieCzasu.h: Nie ma takiego pliku ani katalogu
+compilation terminated.
+src/subdir.mk:39: polecenia dla obiektu 'src/Testowanie.o' nie powiodły się
+make: *** [src/Testowanie.o] Błąd 1
+18:22:17 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:6,
+                 from ../src/MierzenieCzasu.cpp:8:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:8:0:
+../src/MierzenieCzasu.h:11:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point poczatek;
+  ^
+../src/MierzenieCzasu.h:12:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point koniec;
+  ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+18:41:10 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:6,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:11:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point poczatek;
+  ^
+../src/MierzenieCzasu.h:12:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point koniec;
+  ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: In member function ‘long int MierzenieCzasu::ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(Czas::czasKoncowy - Czas::czasPoczatkowy).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(Czas::czasKoncowy - Czas::czasPoczatkowy).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘Czas’ has not been declared
+     return duration_cast<nanoseconds>(Czas::czasKoncowy - Czas::czasPoczatkowy).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:59: error: ‘Czas’ has not been declared
+     return duration_cast<nanoseconds>(Czas::czasKoncowy - Czas::czasPoczatkowy).count();
+                                                           ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+18:51:28 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:6,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:11:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point poczatek;
+  ^
+../src/MierzenieCzasu.h:12:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point koniec;
+  ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: In member function ‘long int MierzenieCzasu::ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘koniec’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘poczatek’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+18:51:55 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:6,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:11:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point poczatek;
+  ^
+../src/MierzenieCzasu.h:12:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point koniec;
+  ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::stop()’:
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = chrono::high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘chrono’ has not been declared
+     koniec = chrono::high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: In member function ‘long int MierzenieCzasu::ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘koniec’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘poczatek’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+18:52:25 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:6,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:11:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point poczatek;
+  ^
+../src/MierzenieCzasu.h:12:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point koniec;
+  ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = chrono::high_resolution_clock::chrono::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘chrono’ has not been declared
+     koniec = chrono::high_resolution_clock::chrono::now();
+              ^
+../src/MierzenieCzasu.cpp: In member function ‘long int MierzenieCzasu::ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘koniec’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘poczatek’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+18:53:24 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:6,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:11:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point poczatek;
+  ^
+../src/MierzenieCzasu.h:12:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point koniec;
+  ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: In member function ‘long int MierzenieCzasu::ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘koniec’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘poczatek’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+18:54:23 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:6,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:11:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point poczatek;
+  ^
+../src/MierzenieCzasu.h:12:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point koniec;
+  ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: In member function ‘long int MierzenieCzasu::ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘koniec’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘poczatek’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+18:55:05 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:6,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:8:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.h:8:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.h:13:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point poczatek;
+  ^
+../src/MierzenieCzasu.h:14:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point koniec;
+  ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: In member function ‘long int MierzenieCzasu::ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘koniec’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘poczatek’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+18:59:32 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:6,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:8:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.h:8:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.h:13:7: error: ‘chrono’ in namespace ‘std’ does not name a type
+  std::chrono::high_resolution_clock::time_point poczatek;
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+       ^
+../src/MierzenieCzasu.h:14:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point koniec;
+  ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: In member function ‘long int MierzenieCzasu::ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘koniec’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘poczatek’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+18:59:44 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:6,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:8:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.h:8:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.h:13:7: error: ‘chrono’ in namespace ‘std’ does not name a type
+  std::chrono::high_resolution_clock::std::chrono::time_point poczatek;
+       ^
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+../src/MierzenieCzasu.h:14:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point koniec;
+  ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: In member function ‘long int MierzenieCzasu::ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘koniec’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘poczatek’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+19:00:40 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:6,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:13:7: error: ‘chrono’ in namespace ‘std’ does not name a type
+  std::chrono::high_resolution_clock::time_point poczatek;
+       ^
+../src/MierzenieCzasu.h:14:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point koniec;
+  ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: In member function ‘long int MierzenieCzasu::ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘koniec’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘poczatek’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+19:01:32 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:6,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:13:7: error: ‘chrono’ in namespace ‘std’ does not name a type
+  std::chrono::high_resolution_clock::time_point poczatek;
+       ^
+../src/MierzenieCzasu.h:14:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point koniec;
+  ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: In member function ‘long int MierzenieCzasu::ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘koniec’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘poczatek’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+19:01:45 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:2,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:13:7: error: ‘chrono’ in namespace ‘std’ does not name a type
+  std::chrono::high_resolution_clock::time_point poczatek;
+       ^
+../src/MierzenieCzasu.h:14:2: error: ‘high_resolution_clock’ does not name a type
+  high_resolution_clock::time_point koniec;
+  ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: In member function ‘long int MierzenieCzasu::ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘koniec’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘poczatek’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+19:03:22 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:5,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:12:7: error: ‘chrono’ in namespace ‘std’ does not name a type
+  std::chrono::high_resolution_clock::time_point poczatek;
+       ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: In member function ‘void MierzenieCzasu::stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: In member function ‘long int MierzenieCzasu::ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+../src/MierzenieCzasu.cpp:18:39: error: ‘koniec’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘poczatek’ is not a member of ‘MierzenieCzasu’
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+19:09:11 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:2,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:8:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.h:8:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.h:12:5: error: ‘high_resolution_clock’ does not name a type
+     high_resolution_clock::time_point poczatek;
+     ^
+../src/MierzenieCzasu.h:13:5: error: ‘high_resolution_clock’ does not name a type
+     high_resolution_clock::time_point ckoniec;
+     ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp:8:6: error: ‘MierzenieCzasu’ has not been declared
+ void MierzenieCzasu::start() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘void start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: At global scope:
+../src/MierzenieCzasu.cpp:12:6: error: ‘MierzenieCzasu’ has not been declared
+ void MierzenieCzasu::stop() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘void stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: At global scope:
+../src/MierzenieCzasu.cpp:16:6: error: ‘MierzenieCzasu’ has not been declared
+ long MierzenieCzasu::ileZajelo() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘long int ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘MierzenieCzasu’ has not been declared
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘MierzenieCzasu’ has not been declared
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+19:09:35 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:2,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:12:10: error: ‘chrono’ in namespace ‘std’ does not name a type
+     std::chrono::high_resolution_clock::time_point poczatek;
+          ^
+../src/MierzenieCzasu.h:13:5: error: ‘high_resolution_clock’ does not name a type
+     high_resolution_clock::time_point ckoniec;
+     ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp:8:6: error: ‘MierzenieCzasu’ has not been declared
+ void MierzenieCzasu::start() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘void start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: At global scope:
+../src/MierzenieCzasu.cpp:12:6: error: ‘MierzenieCzasu’ has not been declared
+ void MierzenieCzasu::stop() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘void stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: At global scope:
+../src/MierzenieCzasu.cpp:16:6: error: ‘MierzenieCzasu’ has not been declared
+ long MierzenieCzasu::ileZajelo() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘long int ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘MierzenieCzasu’ has not been declared
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘MierzenieCzasu’ has not been declared
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+make: *** [src/MierzenieCzasu.o] Błąd 1
+19:09:52 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:2,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:12:10: error: ‘chrono’ in namespace ‘std’ does not name a type
+     std::chrono::high_resolution_clock::std::chrono::time_point poczatek;
+          ^
+../src/MierzenieCzasu.h:13:5: error: ‘high_resolution_clock’ does not name a type
+     high_resolution_clock::time_point ckoniec;
+     ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp:8:6: error: ‘MierzenieCzasu’ has not been declared
+ void MierzenieCzasu::start() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘void start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: At global scope:
+../src/MierzenieCzasu.cpp:12:6: error: ‘MierzenieCzasu’ has not been declared
+ void MierzenieCzasu::stop() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘void stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: At global scope:
+../src/MierzenieCzasu.cpp:16:6: error: ‘MierzenieCzasu’ has not been declared
+ long MierzenieCzasu::ileZajelo() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘long int ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘MierzenieCzasu’ has not been declared
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘MierzenieCzasu’ has not been declared
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+19:10:12 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:2,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:8:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.h:8:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.h:12:5: error: ‘high_resolution_clock’ does not name a type
+     high_resolution_clock::time_point poczatek;
+     ^
+../src/MierzenieCzasu.h:13:5: error: ‘high_resolution_clock’ does not name a type
+     high_resolution_clock::time_point ckoniec;
+     ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp:8:6: error: ‘MierzenieCzasu’ has not been declared
+ void MierzenieCzasu::start() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘void start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: At global scope:
+../src/MierzenieCzasu.cpp:12:6: error: ‘MierzenieCzasu’ has not been declared
+ void MierzenieCzasu::stop() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘void stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: At global scope:
+../src/MierzenieCzasu.cpp:16:6: error: ‘MierzenieCzasu’ has not been declared
+ long MierzenieCzasu::ileZajelo() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘long int ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘MierzenieCzasu’ has not been declared
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘MierzenieCzasu’ has not been declared
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+make: *** [src/MierzenieCzasu.o] Błąd 1
+19:42:58 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:2,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:8:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.h:8:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.h:12:5: error: ‘high_resolution_clock’ does not name a type
+     high_resolution_clock::time_point poczatek;
+     ^
+../src/MierzenieCzasu.h:13:5: error: ‘high_resolution_clock’ does not name a type
+     high_resolution_clock::time_point ckoniec;
+     ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp:8:6: error: ‘MierzenieCzasu’ has not been declared
+ void MierzenieCzasu::start() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘void start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: At global scope:
+../src/MierzenieCzasu.cpp:12:6: error: ‘MierzenieCzasu’ has not been declared
+ void MierzenieCzasu::stop() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘void stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: At global scope:
+../src/MierzenieCzasu.cpp:16:6: error: ‘MierzenieCzasu’ has not been declared
+ long MierzenieCzasu::ileZajelo() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘long int ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘MierzenieCzasu’ has not been declared
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘MierzenieCzasu’ has not been declared
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+23:05:11 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Drzewo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Drzewo.d" -MT"src/Drzewo.o" -o "src/Drzewo.o" "../src/Drzewo.cpp"
+../src/Drzewo.cpp: In member function ‘void Drzewo::rotacjaWLewo(DrzewoElement*)’:
+../src/Drzewo.cpp:40:4: error: expected ‘}’ before ‘else’
+    else{
+    ^
+../src/Drzewo.cpp: At global scope:
+../src/Drzewo.cpp:45:1: error: expected declaration before ‘}’ token
+ }
+ ^
+src/subdir.mk:42: polecenia dla obiektu 'src/Drzewo.o' nie powiodły się
+make: *** [src/Drzewo.o] Błąd 1
+23:05:48 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Drzewo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Drzewo.d" -MT"src/Drzewo.o" -o "src/Drzewo.o" "../src/Drzewo.cpp"
+../src/Drzewo.cpp:46:1: error: expected declaration before ‘}’ token
+ }
+ ^
+src/subdir.mk:42: polecenia dla obiektu 'src/Drzewo.o' nie powiodły się
+make: *** [src/Drzewo.o] Błąd 1
+23:57:41 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Drzewo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Drzewo.d" -MT"src/Drzewo.o" -o "src/Drzewo.o" "../src/Drzewo.cpp"
+../src/Drzewo.cpp: In member function ‘void Drzewo::rotacjaWPrawo(DrzewoElement*)’:
+../src/Drzewo.cpp:63:22: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+    if(p->lewo=element)p->lewo=y; else p->prawo=y;
+                      ^
+../src/Drzewo.cpp: In member function ‘DrzewoElement* Drzewo::wyszukajNastepnyElement(DrzewoElement*)’:
+../src/Drzewo.cpp:84:5: error: ‘p’ was not declared in this scope
+  if(p!=&straznik){
+     ^
+../src/Drzewo.cpp: In member function ‘void Drzewo::dodaj(int)’:
+../src/Drzewo.cpp:142:21: error: expected identifier before ‘(’ token
+   while(X!=korzen)&&((X->rodzic->kolor=='R')){
+                     ^
+../src/Drzewo.cpp:107:21: warning: unused variable ‘Y’ [-Wunused-variable]
+  DrzewoElement *X, *Y;
+                     ^
+src/subdir.mk:42: polecenia dla obiektu 'src/Drzewo.o' nie powiodły się
+make: *** [src/Drzewo.o] Błąd 1
+23:58:49 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Drzewo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Drzewo.d" -MT"src/Drzewo.o" -o "src/Drzewo.o" "../src/Drzewo.cpp"
+../src/Drzewo.cpp: In member function ‘DrzewoElement* Drzewo::wyszukajNastepnyElement(DrzewoElement*)’:
+../src/Drzewo.cpp:84:5: error: ‘p’ was not declared in this scope
+  if(p!=&straznik){
+     ^
+../src/Drzewo.cpp: In member function ‘void Drzewo::dodaj(int)’:
+../src/Drzewo.cpp:142:21: error: expected identifier before ‘(’ token
+   while(X!=korzen)&&((X->rodzic->kolor=='R')){
+                     ^
+../src/Drzewo.cpp:107:21: warning: unused variable ‘Y’ [-Wunused-variable]
+  DrzewoElement *X, *Y;
+                     ^
+src/subdir.mk:42: polecenia dla obiektu 'src/Drzewo.o' nie powiodły się
+make: *** [src/Drzewo.o] Błąd 1
+23:59:23 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Drzewo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Drzewo.d" -MT"src/Drzewo.o" -o "src/Drzewo.o" "../src/Drzewo.cpp"
+../src/Drzewo.cpp: In member function ‘void Drzewo::dodaj(int)’:
+../src/Drzewo.cpp:142:21: error: expected identifier before ‘(’ token
+   while(X!=korzen)&&((X->rodzic->kolor=='R')){
+                     ^
+../src/Drzewo.cpp:107:21: warning: unused variable ‘Y’ [-Wunused-variable]
+  DrzewoElement *X, *Y;
+                     ^
+src/subdir.mk:42: polecenia dla obiektu 'src/Drzewo.o' nie powiodły się
+make: *** [src/Drzewo.o] Błąd 1
+00:00:53 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Drzewo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Drzewo.d" -MT"src/Drzewo.o" -o "src/Drzewo.o" "../src/Drzewo.cpp"
+Finished building: ../src/Drzewo.cpp
+ 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+In file included from /usr/include/c++/5/chrono:35:0,
+                 from ../src/MierzenieCzasu.h:2,
+                 from ../src/MierzenieCzasu.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from ../src/MierzenieCzasu.cpp:1:0:
+../src/MierzenieCzasu.h:8:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+../src/MierzenieCzasu.h:8:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.h:12:5: error: ‘high_resolution_clock’ does not name a type
+     high_resolution_clock::time_point poczatek;
+     ^
+../src/MierzenieCzasu.h:13:5: error: ‘high_resolution_clock’ does not name a type
+     high_resolution_clock::time_point ckoniec;
+     ^
+../src/MierzenieCzasu.cpp:6:22: error: ‘chrono’ is not a namespace-name
+ using namespace std::chrono;
+                      ^
+src/subdir.mk:42: polecenia dla obiektu 'src/MierzenieCzasu.o' nie powiodły się
+../src/MierzenieCzasu.cpp:6:28: error: expected namespace-name before ‘;’ token
+ using namespace std::chrono;
+                            ^
+../src/MierzenieCzasu.cpp:8:6: error: ‘MierzenieCzasu’ has not been declared
+ void MierzenieCzasu::start() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘void start()’:
+../src/MierzenieCzasu.cpp:9:5: error: ‘poczatek’ was not declared in this scope
+     poczatek = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:9:16: error: ‘high_resolution_clock’ has not been declared
+     poczatek = high_resolution_clock::now();
+                ^
+../src/MierzenieCzasu.cpp: At global scope:
+../src/MierzenieCzasu.cpp:12:6: error: ‘MierzenieCzasu’ has not been declared
+ void MierzenieCzasu::stop() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘void stop()’:
+../src/MierzenieCzasu.cpp:13:5: error: ‘koniec’ was not declared in this scope
+     koniec = high_resolution_clock::now();
+     ^
+../src/MierzenieCzasu.cpp:13:14: error: ‘high_resolution_clock’ has not been declared
+     koniec = high_resolution_clock::now();
+              ^
+../src/MierzenieCzasu.cpp: At global scope:
+../src/MierzenieCzasu.cpp:16:6: error: ‘MierzenieCzasu’ has not been declared
+ long MierzenieCzasu::ileZajelo() {
+      ^
+../src/MierzenieCzasu.cpp: In function ‘long int ileZajelo()’:
+../src/MierzenieCzasu.cpp:18:12: error: ‘duration_cast’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+            ^
+../src/MierzenieCzasu.cpp:18:26: error: ‘nanoseconds’ was not declared in this scope
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                          ^
+../src/MierzenieCzasu.cpp:18:39: error: ‘MierzenieCzasu’ has not been declared
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                       ^
+../src/MierzenieCzasu.cpp:18:64: error: ‘MierzenieCzasu’ has not been declared
+     return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+                                                                ^
+make: *** [src/MierzenieCzasu.o] Błąd 1
+00:02:02 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+Finished building: ../src/MierzenieCzasu.cpp
+ 
+Building file: ../src/SDiZO Project.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDiZO Project.d" -MT"src/SDiZO\ Project.d" -o "src/SDiZO Project.o" "../src/SDiZO Project.cpp"
+Finished building: ../src/SDiZO Project.cpp
+ 
+Building file: ../src/Testowanie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Testowanie.d" -MT"src/Testowanie.o" -o "src/Testowanie.o" "../src/Testowanie.cpp"
+Finished building: ../src/Testowanie.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o   
+Finished building target: SDiZO Project
+ 

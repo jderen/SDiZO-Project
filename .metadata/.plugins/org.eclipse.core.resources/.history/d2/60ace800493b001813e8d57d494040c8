@@ -1,0 +1,17 @@
+/*
+ * MierzenieCzasu.h
+ *
+ *  Created on: 8 kwi 2018
+ *      Author: kuba
+ */
+
+#ifndef MIERZENIECZASU_H_
+#define MIERZENIECZASU_H_
+
+class MierzenieCzasu {
+public:
+	MierzenieCzasu();
+	virtual ~MierzenieCzasu();
+};
+
+#endif /* MIERZENIECZASU_H_ */

@@ -1,0 +1,88 @@
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	return 0;
+}
+if (Y->kolor == 'B')   // Naprawa struktury drzewa czerwono-czarnego
+        while ((Z != korzen) && (Z->kolor == 'B'))
+            if (Z == Z->rodzic->lewo) {
+                W = Z->rodzic->prawo;
+
+                //Przypadek 1
+                if (W->kolor == 'R') {
+                    W->kolor = 'B';
+                    Z->rodzic->kolor = 'R';
+                    obrotWLewo(Z->rodzic);
+                    W = Z->rodzic->prawo;
+                }
+
+                //Przypadek 2
+                if ((W->lewo->kolor == 'B') && (W->prawo->kolor == 'B')) {
+                    W->kolor = 'R';
+                    Z = Z->rodzic;
+                    continue;
+                }
+
+                //Przypadek 3
+                if (W->prawo->kolor == 'B') {
+                    W->lewo->kolor = 'B';
+                    W->kolor = 'R';
+                    obrotWPrawo(W);
+                    W = Z->rodzic->prawo;
+                }
+
+                //Przypadek 4
+                W->kolor = Z->rodzic->kolor;
+                Z->rodzic->kolor = 'B';
+                W->prawo->kolor = 'B';
+                obrotWLewo(Z->rodzic);
+
+                //Zakończenie pętli
+                Z = korzen;
+
+                //Przypadki lustrzane
+            } else {
+                W = Z->rodzic->lewo;
+
+                //Lustrzany przypadek 1
+                if (W->kolor == 'R') {
+                    W->kolor = 'B';
+                    Z->rodzic->kolor = 'R';
+                    obrotWLewo(Z->rodzic);
+                    W = Z->rodzic->lewo;
+                }
+
+                //Lustrzany przypadek 2
+                if ((W->lewo->kolor == 'B') && (W->prawo->kolor == 'B')) {
+                    W->kolor = 'R';
+                    Z = Z->rodzic;
+                    continue;
+                }
+
+                //Lustrzany przypadek 3
+                if (W->lewo->kolor == 'B') {
+                    W->prawo->kolor = 'B';
+                    W->kolor = 'R';
+                    obrotWLewo(W);
+                    W = Z->rodzic->lewo;
+                }
+
+                //Lustrzany przypadek 4
+                W->kolor = Z->rodzic->kolor;
+                Z->rodzic->kolor = 'B';
+                W->lewo->kolor = 'B';
+                obrotWPrawo(Z->rodzic);
+
+                //Zakończenie pętli
+                Z = korzen;
+            }
+
+    Z->kolor = 'B';
+
+    delete Y;
+
+

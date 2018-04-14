@@ -1,0 +1,26 @@
+
+#ifndef MIERZENIECZASU_H_
+#define MIERZENIECZASU_H_
+
+#include <iostream>
+#include <chrono>
+using namespace std;
+using namespace std::chrono;
+
+class MierzenieCzasu {
+public:
+
+	std::chrono::high_resolution_clock::std::chrono::time_point poczatek;
+	high_resolution_clock::time_point koniec;
+
+	MierzenieCzasu();
+	~MierzenieCzasu();
+	void start();
+
+	void stop();
+
+	long ileZajelo();
+
+};
+
+#endif /* MIERZENIECZASU_H_ */

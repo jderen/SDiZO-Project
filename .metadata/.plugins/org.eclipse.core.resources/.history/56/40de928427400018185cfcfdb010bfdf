@@ -1,0 +1,60 @@
+
+
+#include "Drzewo.h"
+
+Drzewo::Drzewo() {
+	rozmiar=0;
+
+	straznik.kolor='B';							//tworzenie straznika
+	straznik.lewo=&straznik;
+	straznik.prawo=&straznik;
+	straznik.rodzic=&straznik;
+	korzen=&straznik;
+
+}
+
+Drzewo::~Drzewo() {
+	if(korzen){
+		usunDrzewo();
+	}
+}
+
+void Drzewo::dodaj(int wartosc){
+
+	DrzewoElement *X, *Y;
+
+	X=new DrzewoElement;						//tworzymy nowy węzeł dla drzewa
+	X->wartosc=wartosc;
+	X->rodzic=korzen;
+	X->lewo=&straznik;
+	X->prawo=&straznik;
+
+	if(X->rodzic==&straznik){					//jeżeli rodzic jest straznikiem to X zostaje korzeniem
+		korzen=X;
+	}
+	else{										//w przeciwnym razie zastępujemy liść
+		while(true){							//szukamy który liść zastąpić przez X (prawy czy lewy)
+			if(wartosc>X->rodzic->wartosc){		//w tej sytuacji X zastępuje prawy liść
+				if(X->rodzic->prawo==&straznik){
+					X->rodzic->prawo=X;
+					break;
+				}
+				X->rodzic=X->rodzic->prawo;
+			}
+			else if(wartosc<X->rodzic->wartosc){
+				if(X->rodzic->lewo==&straznik){
+					X->rodzic->lewo=X;
+					break;
+				}
+				X->rodzic=X->rodzic->lewo;
+			}
+			else{									//w przeciwnym razie występuje brak możliwości zastąpienia liścia
+				delete X;
+				return;
+		}
+
+	}
+
+
+}
+}

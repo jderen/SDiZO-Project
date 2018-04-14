@@ -1,0 +1,240 @@
+
+
+#include "Drzewo.h"
+
+Drzewo::Drzewo() {
+	rozmiar=0;
+
+	straznik.kolor='B';							//tworzenie straznika
+	straznik.lewo=&straznik;
+	straznik.prawo=&straznik;
+	straznik.rodzic=&straznik;
+	korzen=&straznik;
+
+}
+
+Drzewo::~Drzewo() {
+	if(korzen){
+		usunDrzewo();
+	}
+}
+
+void Drzewo::rotacjaWLewo(DrzewoElement *element){
+
+	DrzewoElement *y, *p;
+
+	y=element->prawo;
+	if(y!=&straznik){
+		p=element->rodzic;
+		element->prawo=y->lewo;
+		if(element->prawo!=&straznik){
+			element->prawo->rodzic=element;
+		}
+
+		y->lewo=element;
+		y->rodzic=p;
+		element->rodzic=y;
+
+		if(p!=&straznik){
+			if(p->lewo==element)p->lewo=y;else p->prawo=y;
+		}
+		else{
+				korzen=y;
+			}
+		}
+	}
+}
+
+void Drzewo::dodaj(int wartosc){
+
+	DrzewoElement *X, *Y;
+
+	X=new DrzewoElement;						//tworzymy nowy węzeł dla drzewa
+	X->wartosc=wartosc;
+	X->rodzic=korzen;
+	X->lewo=&straznik;
+	X->prawo=&straznik;
+
+	if(X->rodzic==&straznik){					//jeżeli rodzic jest straznikiem to X zostaje korzeniem
+		korzen=X;
+	}
+	else{										//w przeciwnym razie zastępujemy liść
+		while(true){							//szukamy który liść zastąpić przez X (prawy czy lewy)
+			if(wartosc>X->rodzic->wartosc){		//w tej sytuacji X zastępuje prawy liść
+				if(X->rodzic->prawo==&straznik){
+					X->rodzic->prawo=X;
+					break;
+				}
+				X->rodzic=X->rodzic->prawo;
+			}
+			else if(wartosc<X->rodzic->wartosc){
+				if(X->rodzic->lewo==&straznik){
+					X->rodzic->lewo=X;
+					break;
+				}
+				X->rodzic=X->rodzic->lewo;
+			}
+			else{									//w przeciwnym razie występuje brak możliwości zastąpienia liścia
+				delete X;
+				return;
+		}
+
+	}
+
+		X->kolor='R';								//Kolorujemy węzeł na czerwono
+		while(X!=korzen)&&((X->rodzic->kolor=='R')){
+			if(X->rodzic==X->rodzic->rodzic->lewo){
+				Y=X->rodzic->rodzic->prawo;
+
+				if(Y->kolor=='R'){					//przypadek pierwszy
+					X->rodzic->kolor='B';
+					Y->kolor='B';
+					X->rodzic->rodzic->kolor='R';
+					X=X->rodzic->rodzic;
+					continue;
+				}
+
+				if(X==X->rodzic->prawo){			//przypadek drugi
+					X=X->rodzic;
+					rotacjaWLewo(X);
+				}
+
+				X->rodzic->kolor='B';
+				X->rodzic->rodzic->kolor='R';
+				rotacjaWPrawo(X->rodzic->rodzic);
+				break;
+			}
+			else{									//teraz rozpatrujemy przypadki lustrzane
+				Y=X->rodzic->rodzic->lewo;
+
+				if(Y->kolor=='R'){					//przypadek pierwszy (lustrzany)
+					X->rodzic->kolor='B';
+					Y->kolor='B';
+					X->rodzic->rodzic->kolor='R';
+					X=X->rodzic->rodzic;
+					continue;
+				}
+
+				if(X==X->rodzic->lewo){				//przypadek drugi (lustrzany)
+					X=X->rodzic;
+					rotacjaWPrawo(X);
+				}
+
+				X->rodzic->kolor='B';
+				X->rodzic->rodzic->kolor='R';
+				rotacjaWLewo(X->rodzic->rodzic);
+				break;
+			}
+		}
+
+		korzen->kolor='B';
+		rozmiar++;									//zwiekszamy rozmiar drzewa o jeden
+	}
+}
+
+void Drzewo::usun(int wartosc){
+
+	DrzewoElement *elementDoUsuniecia;
+	wyszukajElement(wartosc, korzen, elementDoUsuniecia);
+
+	DrzewoElement *W, *Y, *Z;
+
+	if((elementDoUsuniecia->lewo==&straznik)||(elementDoUsuniecia->prawo==&straznik)){
+		Y=elementDoUsuniecia;
+	}
+	else{
+		Y=wyszukajNastepnyElement(elementDoUsuniecia);
+	}
+
+	if(Y->lewo!=&straznik){
+		Z=Y->lewo;
+	}
+	else{
+		Z=Y->prawo;
+	}
+
+	Z->rodzic=Y->rodzic;
+
+	if(Y->rodzic==&straznik){
+		korzen=Z;
+	}
+	else if(Y==Y->rodzic->lewo){
+		Y->rodzic->lewo=Z;
+	}
+	else{
+		Y->rodzic->prawo=Z;
+	}
+
+	if(Y!=elementDoUsuniecia){
+		elementDoUsuniecia->wartosc=Y->wartosc;
+	}
+
+	if(Y->kolor=='B')									//naprawiamy strukturę drzewa czerwono-czarnego
+		while((Z!=korzen)&&(Z->kolor=='B'))
+			if(Z==Z->rodzic->lewo){
+				W=Z->rodzic->prawo;
+
+				if(W->kolor=='R'){						//przypadek pierwszy
+					W->kolor='B';
+					Z->rodzic->kolor='R';
+					rotacjaWLewo(Z->rodzic);
+					W=Z->rodzic->prawo;
+				}
+
+				if((W->lewo->kolor=='B')&&(W->prawo->kolor=='B')){	//przypadek drugi
+					W->kolor='R';
+					Z=Z->rodzic;
+					continue;
+				}
+
+				if(W->prawo->kolor=='B'){							//przypadek trzeci
+					W->lewo->kolor='B';
+					W->kolor='R';
+					rotacjaWPrawo(W);
+					W=Z->rodzic->prawo;
+				}
+
+				W->kolor=Z->rodzic->kolor;							//przypadek czwarty
+				Z->rodzic->kolor='B';
+				W->prawo->kolor='B';
+				rotacjaWLewo(Z->rodzic);
+
+				Z=korzen;											//koniec petli
+			}
+			else{													//rozpatrzymy przypadki lustrzane
+				W=Z->rodzic->lewo;
+
+				if(W->kolor=='R'){									//pierwszy przypadek (lustrzany)
+					W->kolor='B';
+					Z->rodzic->kolor='R';
+					rotacjaWLewo(Z->rodzic);
+					W=Z->rodzic->lewo;
+				}
+
+				if((W->lewo->kolor=='B')&&(W->prawo->kolor=='B')){	//drugi przypadek(lustrzany)
+					W->kolor='R';
+					Z=Z->rodzic;
+					continue;
+				}
+
+				if(W->lewo->kolor=='B'){							//trzeci przypadek(lustrzany)
+					W->prawo->kolor='B';
+					W->kolor='R';
+					rotacjaWLewo(W);
+					W=Z->rodzic->lewo;
+				}
+
+				W->kolor=Z->rodzic->kolor;							//czwarty przypadek(lustrzany)
+				Z->rodzic->kolor='B';
+				W->lewo->kolor='B';
+				rotacjaWPrawo(Z->rodzic);
+
+				Z=korzen;											//koniec petli
+			}
+
+	Z->kolor='B';
+	delete Y;
+}
+
+
+

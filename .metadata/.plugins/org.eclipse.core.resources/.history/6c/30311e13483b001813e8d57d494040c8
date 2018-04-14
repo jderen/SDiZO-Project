@@ -1,0 +1,18 @@
+/*
+ * Testowanie.cpp
+ *
+ *  Created on: 8 kwi 2018
+ *      Author: kuba
+ */
+
+#include "Testowanie.h"
+
+Testowanie::Testowanie() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Testowanie::~Testowanie() {
+	// TODO Auto-generated destructor stub
+}
+

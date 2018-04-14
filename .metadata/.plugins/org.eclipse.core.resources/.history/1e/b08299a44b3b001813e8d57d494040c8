@@ -1,0 +1,18 @@
+/*
+ * MierzenieCzasu.cpp
+ *
+ *  Created on: 8 kwi 2018
+ *      Author: kuba
+ */
+
+#include "MierzenieCzasu.h"
+
+MierzenieCzasu::MierzenieCzasu() {
+	// TODO Auto-generated constructor stub
+
+}
+
+MierzenieCzasu::~MierzenieCzasu() {
+	// TODO Auto-generated destructor stub
+}
+

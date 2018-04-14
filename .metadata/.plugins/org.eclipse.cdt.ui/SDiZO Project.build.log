@@ -1,15 +1,25 @@
-13:53:03 **** Incremental Build of configuration Debug for project SDiZO Project ****
+00:02:02 **** Incremental Build of configuration Debug for project SDiZO Project ****
 make all 
-Building file: ../src/Lista.cpp
+Building file: ../src/MierzenieCzasu.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
-Finished building: ../src/Lista.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+Finished building: ../src/MierzenieCzasu.cpp
+ 
+Building file: ../src/SDiZO Project.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDiZO Project.d" -MT"src/SDiZO\ Project.d" -o "src/SDiZO Project.o" "../src/SDiZO Project.cpp"
+Finished building: ../src/SDiZO Project.cpp
+ 
+Building file: ../src/Testowanie.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Testowanie.d" -MT"src/Testowanie.o" -o "src/Testowanie.o" "../src/Testowanie.cpp"
+Finished building: ../src/Testowanie.cpp
  
 Building target: SDiZO Project
 Invoking: GCC C++ Linker
-g++  -o "SDiZO Project"  ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/SDiZO\ Project.o ./src/Tablica.o   
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o   
 Finished building target: SDiZO Project
  
 
-13:53:03 Build Finished (took 576ms)
+00:02:03 Build Finished (took 783ms)
 

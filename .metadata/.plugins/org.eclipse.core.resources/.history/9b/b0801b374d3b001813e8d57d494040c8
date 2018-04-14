@@ -1,0 +1,20 @@
+#include "MierzenieCzasu.h"
+#include <iostream>
+#include <chrono>
+
+using namespace std;
+//using namespace std::chrono;
+
+void MierzenieCzasu::start() {
+    poczatek = high_resolution_clock::now();
+}
+
+void MierzenieCzasu::stop() {
+    koniec = chrono::high_resolution_clock::now();
+}
+
+long MierzenieCzasu::ileZajelo() {
+
+    return duration_cast<nanoseconds>(MierzenieCzasu::koniec - MierzenieCzasu::poczatek).count();
+
+}

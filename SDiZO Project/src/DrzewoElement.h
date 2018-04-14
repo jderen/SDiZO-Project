@@ -1,17 +1,18 @@
-/*
- * DrzewoElement.h
- *
- *  Created on: 8 kwi 2018
- *      Author: kuba
- */
+
 
 #ifndef DRZEWOELEMENT_H_
 #define DRZEWOELEMENT_H_
 
 class DrzewoElement {
 public:
+	int wartosc;
+	char kolor;
+	DrzewoElement *lewo;
+	DrzewoElement *prawo;
+	DrzewoElement *rodzic;
+
 	DrzewoElement();
-	virtual ~DrzewoElement();
+	~DrzewoElement();
 };
 
 #endif /* DRZEWOELEMENT_H_ */

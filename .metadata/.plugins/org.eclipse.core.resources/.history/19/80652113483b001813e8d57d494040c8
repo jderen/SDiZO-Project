@@ -1,0 +1,14 @@
+
+
+#include "Drzewo.h"
+
+Drzewo::Drzewo() {
+	rozmiar=0;
+
+
+}
+
+Drzewo::~Drzewo() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -4,25 +4,37 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/Drzewo.cpp \
+../src/DrzewoElement.cpp \
 ../src/Kopiec.cpp \
 ../src/Lista.cpp \
 ../src/ListaElement.cpp \
+../src/MierzenieCzasu.cpp \
 ../src/SDiZO\ Project.cpp \
-../src/Tablica.cpp 
+../src/Tablica.cpp \
+../src/Testowanie.cpp 
 
 OBJS += \
+./src/Drzewo.o \
+./src/DrzewoElement.o \
 ./src/Kopiec.o \
 ./src/Lista.o \
 ./src/ListaElement.o \
+./src/MierzenieCzasu.o \
 ./src/SDiZO\ Project.o \
-./src/Tablica.o 
+./src/Tablica.o \
+./src/Testowanie.o 
 
 CPP_DEPS += \
+./src/Drzewo.d \
+./src/DrzewoElement.d \
 ./src/Kopiec.d \
 ./src/Lista.d \
 ./src/ListaElement.d \
+./src/MierzenieCzasu.d \
 ./src/SDiZO\ Project.d \
-./src/Tablica.d 
+./src/Tablica.d \
+./src/Testowanie.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
