@@ -1,6 +1,9 @@
 
 
 #include "Drzewo.h"
+#include <string>
+#include <iostream>
+#include <sstream>
 
 using namespace std;
 
@@ -293,7 +296,52 @@ void Drzewo::usun(int wartosc){
 	delete Y;
 }
 
-void Drzewo::wyswietlDrzewo(){
+/*void Drzewo::wyswietlDrzewo(){
+
+}*/
+
+/*string Drzewo::wyswietlDrzewo(){
+	string wynik;
+	wynik=wynik+wyswietlDrzewoKontynuuj(wynik,korzen);
+	return wynik;
+}
+
+string Drzewo::wyswietlDrzewoKontynuuj(string wynik, DrzewoElement *p){
+	stringstream strumien;
+	if(p){
+		wynik=wyswietlDrzewoKontynuuj(wynik,p->lewo);
+		strumien<<p->wartosc;
+		wynik=wynik+""+strumien.str();
+		wynik=wyswietlDrzewoKontynuuj(wynik, p->prawo);
+	}
+	return wynik;
+}
+*/
+
+void Drzewo::wyswietlDrzewo(string sp, string sn, DrzewoElement *element){
+	string cr = "  ";
+		string cl = "  ";
+		string cp = "  ";
+		cr[0] = 218;
+		cr[1] = 196;
+		cl[0] = 192;
+		cl[1] = 196;
+		cp[0] = 179;
+		 string t;
+
+		  if(element!= &straznik)
+		  {
+		    t = sp;
+		    if(sn == cr) t[t.length() - 2] = ' ';
+		    wyswietlDrzewo(t+cp,cr,element->prawo);
+
+		    t = t.substr(0,sp.length()-2);
+		    cout << t << sn << element->kolor << ":" << element->wartosc << endl;
+
+		    t = sp;
+		    if(sn == cl) t[t.length() - 2] = ' ';
+		    wyswietlDrzewo(t+cp,cl,element->lewo);
+		  }
 
 }
 
@@ -310,15 +358,17 @@ void Drzewo::wyszukajWartosc(int wartosc, DrzewoElement* korzenElementu,
 	}
 }
 
-void Drzewo::czyIstnieje(int wartosc){
+bool Drzewo::czyIstnieje(int wartosc){
 	bool znaleziony=false;
 	wyszukajWartosc(wartosc,korzen,znaleziony);
 
 	if(znaleziony){
 		cout<<wartosc<<"wystepuje w drzewie"<<endl;
+		return true;
 	}
 	else{
 		cout<<wartosc<<"nie wystepuje w drzewie"<<endl;
+		return false;
 	}
 }
 

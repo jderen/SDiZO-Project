@@ -1,0 +1,25 @@
+
+
+#ifndef KOPIEC_H_
+#define KOPIEC_H_
+#include <iostream>
+#include <fstream>
+
+class Kopiec {
+public:
+
+	int *zbior;
+	int rozmiar;
+
+	Kopiec();
+	~Kopiec();
+
+	void dodaj(int wartosc);
+	void usun(int wartosc);
+	bool czyIstnieje(int wartosc);
+	//void wyswietlKopiec();
+	void wyswietlKopiec(string sp, string sn, int v);
+	void uporzadkuj();
+};
+
+#endif /* KOPIEC_H_ */

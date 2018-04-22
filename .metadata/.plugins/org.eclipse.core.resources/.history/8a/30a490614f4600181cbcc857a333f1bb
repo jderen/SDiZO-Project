@@ -1,0 +1,14 @@
+/*
+ * Generator.h
+ *
+ *  Created on: 22 kwi 2018
+ *      Author: kuba
+ */
+
+#ifndef GENERATOR_H_
+#define GENERATOR_H_
+
+class Generator {
+};
+
+#endif /* GENERATOR_H_ */

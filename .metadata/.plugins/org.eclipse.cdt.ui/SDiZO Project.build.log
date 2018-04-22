@@ -1,25 +1,19 @@
-00:02:02 **** Incremental Build of configuration Debug for project SDiZO Project ****
+23:58:58 **** Incremental Build of configuration Debug for project SDiZO Project ****
 make all 
-Building file: ../src/MierzenieCzasu.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
-Finished building: ../src/MierzenieCzasu.cpp
- 
 Building file: ../src/SDiZO Project.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDiZO Project.d" -MT"src/SDiZO\ Project.d" -o "src/SDiZO Project.o" "../src/SDiZO Project.cpp"
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDiZO Project.d" -MT"src/SDiZO\ Project.d" -o "src/SDiZO Project.o" "../src/SDiZO Project.cpp"
+../src/SDiZO Project.cpp: In function ‘int main(int, char**)’:
+../src/SDiZO Project.cpp:16:26: warning: unused variable ‘testowaniePojedyncze’ [-Wunused-variable]
+     TestowaniePojedyncze testowaniePojedyncze;
+                          ^
 Finished building: ../src/SDiZO Project.cpp
- 
-Building file: ../src/Testowanie.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Testowanie.d" -MT"src/Testowanie.o" -o "src/Testowanie.o" "../src/Testowanie.cpp"
-Finished building: ../src/Testowanie.cpp
  
 Building target: SDiZO Project
 Invoking: GCC C++ Linker
-g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o   
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
 Finished building target: SDiZO Project
  
 
-00:02:03 Build Finished (took 783ms)
+23:58:59 Build Finished (took 874ms)
 

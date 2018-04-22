@@ -1,7 +1,8 @@
 
 
 #include "Kopiec.h"
-#include <iostream>
+//#include <iostream>
+//#include <string>
 
 using namespace std;
 
@@ -89,5 +90,31 @@ void Kopiec::wyswietlKopiec(){
 	}
 	else{
 		cout<<"Kopiec jest pusty";
+	}
+}
+
+void Kopiec::wyswietl(string sp, string sn, int v){
+	string cl, cr, cp;
+		cr = cl = cp = " ";
+		cr[0] = 218;
+		cr[1] = 196;
+		cl[0] = 192;
+		cl[1] = 196;
+		cp[0] = 179;
+		string s;
+
+		if(v < rozmiar)
+		{
+			s = sp;
+			if (sn == cr) s[s.length() - 2] = ' ';
+			wyswietl(s + cp, cr, 2 * v + 2);
+
+			s = s.substr(0, sp.length() - 2);
+
+			cout << s << sn << *(zbior+v) << endl;
+
+			s = sp;
+			if (sn == cl) s[s.length() - 2] = ' ';
+			wyswietl(s + cp, cl, 2 * v + 1);
 	}
 }

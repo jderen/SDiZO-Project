@@ -10,6 +10,7 @@ public:
 	int rozmiar;
 	DrzewoElement *korzen;
 	DrzewoElement straznik;
+	string cr,cl,cp;
 
 	Drzewo();
 	~Drzewo();
@@ -18,8 +19,8 @@ public:
 	void usun(int wartosc);
 	void usunDrzewo();
 	void usunElement(DrzewoElement *element);
-	void czyIstnieje(int wartosc);
-	void wyswietlDrzewo();
+	bool czyIstnieje(int wartosc);
+	//void wyswietlDrzewo();
 	void wyszukajElement(int wartosc, DrzewoElement *korzenElementu,
 			DrzewoElement *&szukany);
 	void wyszukajWartosc(int wartosc, DrzewoElement* korzenElementu,
@@ -30,6 +31,10 @@ public:
 	void rotacjaWPrawo(DrzewoElement *element);
 	void rotacjaWLewo(DrzewoElement *element);
 
+	//string wyswietlDrzewo();
+	//string wyswietlDrzewoKontynuuj(string wynik, DrzewoElement *p);
+
+	void wyswietlDrzewo(string sp, string sn, DrzewoElement* v);
 };
 
 #endif /* DRZEWO_H_ */

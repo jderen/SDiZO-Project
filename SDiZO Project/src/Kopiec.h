@@ -2,7 +2,9 @@
 
 #ifndef KOPIEC_H_
 #define KOPIEC_H_
-
+#include <iostream>
+#include <string>
+using namespace std;
 class Kopiec {
 public:
 
@@ -16,6 +18,7 @@ public:
 	void usun(int wartosc);
 	bool czyIstnieje(int wartosc);
 	void wyswietlKopiec();
+	void wyswietl(string, string, int);
 	void uporzadkuj();
 };
 

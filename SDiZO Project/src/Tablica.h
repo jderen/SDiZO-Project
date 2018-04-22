@@ -22,7 +22,7 @@ public:
 	bool czyIstnieje(int wartosc);
 	void wyswietlTablice();
 
-
+	void wypelnij(int tablica[],int rozmiar2);
 };
 
 #endif /* TABLICA_H_ */

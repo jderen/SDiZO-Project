@@ -1,0 +1,563 @@
+#include "Testowanie.h"
+#include "Tablica.h"
+#include "Lista.h"
+#include "Kopiec.h"
+#include "Drzewo.h"
+#include "MierzenieCzasu.h"
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+void Testowanie::testowanieTablicy(){
+	srand(time(NULL));
+	Tablica tablica;
+	MierzenieCzasu mierzenieCzasu;
+	int wybor = 10;
+	int miejsce;
+	int wartosc;
+	string wartosciWejscie;
+	string wartosciWyjscie;
+	ifstream plikWejscie;
+	ofstream plikWyjscie;
+
+	while(wybor!=0){
+		cout<<"Podaj liczbe funkcji z ktorej chcesz skorzystac"<<endl;
+		cout<<"1.Dodanie na początek"<<endl;
+		cout<<"2.Dodanie gdzieś"<<endl;
+		cout<<"3.Dodanie na koniec"<<endl;
+		cout<<"4.Usuniecie pierwszego"<<endl;
+		cout<<"5.Usuniecie gdzies"<<endl;
+		cout<<"6.Usun koniec"<<endl;
+		cout<<"7.Wyswietlenie tablicy"<<endl;
+		cout<<"8.Znalezienie elementu"<<endl;
+		cout<<"0. Wyjscie"<<endl;
+		cin>>wybor;
+
+		if(wybor==0)return;												//wyjscie jesli 0
+
+		cout<<"Podaj plik z wartościami wejściowymi: ";
+		cin>>wartosciWejscie;
+		cout<<"Podaj plik z wartościami na wyjściu: ";
+		cin>>wartosciWyjscie;
+
+		//plikWejscie.open("/home/kuba/c++-workspace/Wejście/"+wartosciWejscie);									//otwieramy pliki
+		plikWejscie.open("test");
+		plikWyjscie.open("test1");
+
+		cout<<wartosciWejscie<<" "<<wartosciWyjscie;
+
+		if(plikWejscie.is_open()){
+			cout<<"plik wejsciowy otwarty"<<endl;
+		}
+		else{
+			cout<<"Blad otwarcia pliku wejsciowego"<<endl;
+			return;
+		}
+
+		if(plikWyjscie.is_open()){
+			cout<<"plik wyjsciowy otwarty"<<endl;
+		}
+		else{
+			cout<<"Blad otwarcia pliku wyjsciowego"<<endl;
+			return;
+		}
+	switch(wybor){
+	case 0:
+		return;
+	case 1:
+
+		while(plikWejscie.good()){
+			plikWejscie>>wartosc;									//wczytanie wartosci z pliku
+			mierzenieCzasu.startCzas();
+			tablica.dodajPoczatek(wartosc);
+			mierzenieCzasu.stopCzas();
+			plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;			//zapisanie wyniku pomiaru
+		}
+		plikWejscie.close();										//zamkniecie plikow
+		plikWyjscie.close();
+		break;
+
+	case 2:
+
+	while(plikWejscie.good()){
+		plikWejscie>>wartosc;
+		mierzenieCzasu.startCzas();
+		tablica.dodajGdzies(wartosc, rand()%tablica.rozmiar);
+		mierzenieCzasu.stopCzas();
+		plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+	}
+	plikWejscie.close();
+	plikWyjscie.close();
+	break;
+
+	case 3:
+		while(plikWejscie.good()){
+			plikWejscie>>wartosc;
+			mierzenieCzasu.startCzas();
+			tablica.dodajKoniec(wartosc);
+			mierzenieCzasu.stopCzas();
+			plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+		}
+		plikWejscie.close();
+		plikWyjscie.close();
+		break;
+	case 4:
+		while(plikWejscie.good()){									//wypelniamy tablice wartosciami
+			plikWejscie>>wartosc;
+			tablica.dodajPoczatek(wartosc);
+		}
+		while(tablica.rozmiar!=0){
+			mierzenieCzasu.startCzas();
+			tablica.usunPoczatek();
+			mierzenieCzasu.stopCzas();
+			plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+		}
+		plikWejscie.close();
+		plikWyjscie.close();
+		break;
+
+	case 5:
+		while(plikWejscie.good()){
+			plikWejscie>>wartosc;
+			tablica.dodajPoczatek(wartosc);
+		}
+		while(tablica.rozmiar!=0){
+			mierzenieCzasu.startCzas();
+			tablica.usunGdzies(rand()%tablica.rozmiar);
+			mierzenieCzasu.stopCzas();
+			plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+		}
+		plikWejscie.close();
+		plikWyjscie.close();
+		break;
+
+	case 6:
+		while(plikWejscie.good()){
+			plikWejscie>>wartosc;
+			tablica.dodajPoczatek(wartosc);
+		}
+		while(tablica.rozmiar!=0){
+			mierzenieCzasu.startCzas();
+			tablica.usunKoniec();
+			mierzenieCzasu.stopCzas();
+			plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+		}
+		plikWejscie.close();
+		plikWyjscie.close();
+		break;
+
+	case 7:
+		mierzenieCzasu.startCzas();
+		tablica.wyswietlTablice();
+		mierzenieCzasu.stopCzas();
+		cout<<"Czas wyswietlania: "<<mierzenieCzasu.ileZajelo()<<" nanosekund "<<endl;
+		break;
+
+	case 8:
+		while(plikWejscie.good()){
+			plikWejscie>>wartosc;
+			tablica.dodajPoczatek(wartosc);
+		}
+		for(int i=0; i<tablica.rozmiar; i++){
+			mierzenieCzasu.startCzas();
+			tablica.czyIstnieje(rand()% 2000000 - 1000000);
+			mierzenieCzasu.stopCzas();
+			plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+		}
+		plikWejscie.close();
+		plikWyjscie.close();
+		break;
+
+	default:
+		cout<<"Podaj prawidlowa liczbe"<<endl;
+		break;
+	}
+
+
+}
+}
+
+
+void Testowanie::testowanieListy(){
+
+	srand(time(NULL));
+		Lista lista;
+		MierzenieCzasu mierzenieCzasu;
+		int wybor = 10;
+		int miejsce;
+		int wartosc;
+		string wartosciWejscie;
+		string wartosciWyjscie;
+		ifstream plikWejscie;
+		ofstream plikWyjscie;
+
+		while(wybor!=0){
+				cout<<"Podaj liczbe funkcji z ktorej chcesz skorzystac"<<endl;
+				cout<<"1.Dodanie na początek"<<endl;
+				cout<<"2.Dodanie gdzieś"<<endl;
+				cout<<"3.Dodanie na koniec"<<endl;
+				cout<<"4.Usuniecie pierwszego"<<endl;
+				cout<<"5.Usuniecie gdzies"<<endl;
+				cout<<"6.Usun koniec"<<endl;
+				cout<<"7.Wyswietlenie listy"<<endl;
+				cout<<"8.Znalezienie elementu"<<endl;
+				cout<<"0. Wyjscie"<<endl;
+				cin>>wybor;
+
+				if(wybor==0)return;												//wyjscie jesli 0
+
+				cout<<"Podaj plik z wartościami wejściowymi: ";
+				cin>>wartosciWejscie;
+				cout<<"Podaj plik z wartościami na wyjściu: ";
+				cin>>wartosciWyjscie;
+
+				plikWejscie.open("/home/kuba/c++-workspace/Wejście/"+wartosciWejscie);									//otwieramy pliki
+				plikWyjscie.open("/home/kuba/c++-workspace/Wyjście/"+wartosciWyjscie,fstream::out);
+
+				if(plikWejscie.is_open()){
+					cout<<"plik wejsciowy otwarty"<<endl;
+				}
+				else{
+					cout<<"Blad otwarcia pliku wejsciowego"<<endl;
+					return;
+				}
+
+				if(plikWyjscie.is_open()){
+					cout<<"plik wyjsciowy otwarty"<<endl;
+				}
+				else{
+					cout<<"Blad otwarcia pliku wyjsciowego";
+					return;
+				}
+
+
+				switch(wybor){
+					case 0:
+						return;
+					case 1:
+
+						while(plikWejscie.good()){
+							plikWejscie>>wartosc;									//wczytanie wartosci z pliku
+							mierzenieCzasu.startCzas();
+							lista.dodajPoczatek(wartosc);
+							mierzenieCzasu.stopCzas();
+							plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;			//zapisanie wyniku pomiaru
+						}
+						plikWejscie.close();										//zamkniecie plikow
+						plikWyjscie.close();
+						break;
+
+					case 2:
+
+					while(plikWejscie.good()){
+						plikWejscie>>wartosc;
+
+						if(lista.rozmiar==0){
+							mierzenieCzasu.startCzas();
+							lista.dodajGdzies(wartosc,0);
+							mierzenieCzasu.stopCzas();
+						}
+						else{
+							mierzenieCzasu.startCzas();
+							lista.dodajGdzies(wartosc, 1);
+							mierzenieCzasu.stopCzas();
+						}
+						plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+					}
+					plikWejscie.close();
+					plikWyjscie.close();
+					break;
+
+					case 3:
+						while(plikWejscie.good()){
+							plikWejscie>>wartosc;
+							mierzenieCzasu.startCzas();
+							lista.dodajKoniec(wartosc);
+							mierzenieCzasu.stopCzas();
+							plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+						}
+						plikWejscie.close();
+						plikWyjscie.close();
+						break;
+					case 4:
+						while(plikWejscie.good()){									//wypelniamy tablice wartosciami
+							plikWejscie>>wartosc;
+							lista.dodajPoczatek(wartosc);
+						}
+						while(lista.rozmiar!=0){
+							mierzenieCzasu.startCzas();
+							lista.usunPoczatek();
+							mierzenieCzasu.stopCzas();
+							plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+						}
+						plikWejscie.close();
+						plikWyjscie.close();
+						break;
+
+					case 5:
+						while(plikWejscie.good()){
+							plikWejscie>>wartosc;
+							lista.dodajPoczatek(wartosc);
+						}
+						while(lista.rozmiar!=0){
+							mierzenieCzasu.startCzas();
+							lista.usunGdzies(rand()%lista.rozmiar);
+							mierzenieCzasu.stopCzas();
+							plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+						}
+						plikWejscie.close();
+						plikWyjscie.close();
+						break;
+
+					case 6:
+						while(plikWejscie.good()){
+							plikWejscie>>wartosc;
+							lista.dodajPoczatek(wartosc);
+						}
+						while(lista.rozmiar!=0){
+							mierzenieCzasu.startCzas();
+							lista.usunKoniec();
+							mierzenieCzasu.stopCzas();
+							plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+						}
+						plikWejscie.close();
+						plikWyjscie.close();
+						break;
+
+					case 7:
+						mierzenieCzasu.startCzas();
+						lista.wyswietlListe();
+						mierzenieCzasu.stopCzas();
+						cout<<"Czas wyswietlania: "<<mierzenieCzasu.ileZajelo()<<" nanosekund "<<endl;
+						break;
+
+					case 8:
+						while(plikWejscie.good()){
+							plikWejscie>>wartosc;
+							lista.dodajPoczatek(wartosc);
+						}
+						for(int i=0; i<lista.rozmiar; i++){
+							mierzenieCzasu.startCzas();
+							lista.czyIstnieje(rand()% 2000000 - 1000000);
+							mierzenieCzasu.stopCzas();
+							plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+						}
+						plikWejscie.close();
+						plikWyjscie.close();
+						break;
+
+					default:
+						cout<<"Podaj prawidlowa liczbe"<<endl;
+						break;
+					}
+
+
+				}
+				}
+
+void Testowanie::testowanieKopca(){
+
+	srand(time(NULL));
+		Kopiec kopiec;
+		MierzenieCzasu mierzenieCzasu;
+		int wybor = 10;
+		int miejsce;
+		int wartosc;
+		string wartosciWejscie;
+		string wartosciWyjscie;
+		ifstream plikWejscie;
+		ofstream plikWyjscie;
+
+		while(wybor!=0){
+						cout<<"Podaj liczbe funkcji z ktorej chcesz skorzystac"<<endl;
+						cout<<"1.Dodanie"<<endl;
+						cout<<"2.Usuniecie"<<endl;
+						cout<<"3.Wyswietlenie"<<endl;
+						cout<<"4.Wyszukanie"<<endl;
+						cout<<"0. Wyjscie"<<endl;
+						cin>>wybor;
+
+						if(wybor==0)return;												//wyjscie jesli 0
+
+						cout<<"Podaj plik z wartościami wejściowymi: ";
+						cin>>wartosciWejscie;
+						cout<<"Podaj plik z wartościami na wyjściu: ";
+						cin>>wartosciWyjscie;
+
+						plikWejscie.open("/home/kuba/c++-workspace/Wejście/"+wartosciWejscie);										//otwieramy pliki
+						plikWyjscie.open("/home/kuba/c++-workspace/Wyjście/"+wartosciWyjscie,fstream::out);
+
+						if(plikWejscie.is_open()){
+							cout<<"plik wejsciowy otwarty"<<endl;
+						}
+						else{
+							cout<<"Blad otwarcia pliku wejsciowego"<<endl;
+							return;
+						}
+
+						if(plikWyjscie.is_open()){
+							cout<<"plik wyjsciowy otwarty"<<endl;
+						}
+						else{
+							cout<<"Blad otwarcia pliku wyjsciowego";
+							return;
+						}
+
+						switch(wybor){
+
+						case 0:
+							break;
+						case 1:
+							while(plikWejscie.good()){
+								plikWejscie>>wartosc;
+								mierzenieCzasu.startCzas();
+								kopiec.dodaj(wartosc);
+								mierzenieCzasu.stopCzas();
+								plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+							}
+							plikWejscie.close();
+							plikWyjscie.close();
+							break;
+
+						case 2:
+							while(plikWejscie.good()){
+								plikWejscie>>wartosc;
+								mierzenieCzasu.startCzas();
+								kopiec.usun(wartosc);
+								mierzenieCzasu.stopCzas();
+								plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+							}
+							plikWejscie.close();
+							plikWyjscie.close();
+							break;
+
+						case 3:
+							mierzenieCzasu.startCzas();
+							kopiec.wyswietlKopiec();
+							mierzenieCzasu.stopCzas();
+							cout<<"Czas wyswietlania: "<<mierzenieCzasu.ileZajelo()<<" nanosekund"<<endl;
+							break;
+
+						case 4:
+							while(plikWejscie.good()){
+								plikWejscie>>wartosc;
+								kopiec.dodaj(wartosc);
+							}
+							for(int i=0; i<kopiec.rozmiar;i++){
+								mierzenieCzasu.startCzas();
+								kopiec.czyIstnieje(rand()% 2000000-1000000);
+								mierzenieCzasu.stopCzas();
+								plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+							}
+							plikWejscie.close();
+							plikWyjscie.close();
+							break;
+}
+}
+}
+
+void Testowanie::testowanieDrzewa(){
+	srand(time(NULL));
+			Drzewo drzewo;
+			MierzenieCzasu mierzenieCzasu;
+			int wybor = 10;
+			int miejsce;
+			int wartosc;
+			string wartosciWejscie;
+			string wartosciWyjscie;
+			ifstream plikWejscie;
+			ofstream plikWyjscie;
+
+			while(wybor!=0){
+							cout<<"Podaj liczbe funkcji z ktorej chcesz skorzystac"<<endl;
+							cout<<"1.Dodanie"<<endl;
+							cout<<"2.Usuniecie"<<endl;
+							cout<<"3.Wyswietlenie"<<endl;
+							cout<<"4.Wyszukanie"<<endl;
+							cout<<"0. Wyjscie"<<endl;
+							cin>>wybor;
+
+							if(wybor==0)return;												//wyjscie jesli 0
+
+							cout<<"Podaj plik z wartościami wejściowymi: ";
+							cin>>wartosciWejscie;
+							cout<<"Podaj plik z wartościami na wyjściu: ";
+							cin>>wartosciWyjscie;
+
+							plikWejscie.open("/home/kuba/c++-workspace/Wejście/"+wartosciWejscie);									//otwieramy pliki
+							plikWyjscie.open("/home/kuba/c++-workspace/Wyjście/"+wartosciWyjscie,fstream::out);
+
+							if(plikWejscie.is_open()){
+								cout<<"plik wejsciowy otwarty"<<endl;
+							}
+							else{
+								cout<<"Blad otwarcia pliku wejsciowego"<<endl;
+								return;
+							}
+
+							if(plikWyjscie.is_open()){
+								cout<<"plik wyjsciowy otwarty"<<endl;
+							}
+							else{
+								cout<<"Blad otwarcia pliku wyjsciowego";
+								return;
+							}
+
+							switch(wybor){
+
+							case 0:
+								break;
+							case 1:
+								while(plikWejscie.good()){
+									plikWejscie>>wartosc;
+									mierzenieCzasu.startCzas();
+									drzewo.dodaj(wartosc);
+									mierzenieCzasu.stopCzas();
+									plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+								}
+								plikWejscie.close();
+								plikWyjscie.close();
+								break;
+
+							case 2:
+								while(plikWejscie.good()){
+									plikWejscie>>wartosc;
+									drzewo.dodaj(wartosc);
+								}
+
+								while(plikWejscie.good()){
+									plikWejscie>>wartosc;
+									mierzenieCzasu.startCzas();
+									drzewo.usun(wartosc);
+									mierzenieCzasu.stopCzas();
+									plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+								}
+								plikWejscie.close();
+								plikWyjscie.close();
+								break;
+
+							case 3:
+								mierzenieCzasu.startCzas();
+								drzewo.wyswietlDrzewo();
+								mierzenieCzasu.stopCzas();
+								cout<<"Czas wyswietlania: "<<mierzenieCzasu.ileZajelo()<<" nanosekund"<<endl;
+								break;
+
+							case 4:
+								while(plikWejscie.good()){
+									plikWejscie>>wartosc;
+									drzewo.dodaj(wartosc);
+								}
+								for(int i=0; i<drzewo.rozmiar;i++){
+									mierzenieCzasu.startCzas();
+									drzewo.czyIstnieje(rand()% 2000000-1000000);
+									mierzenieCzasu.stopCzas();
+									plikWyjscie<<mierzenieCzasu.ileZajelo()<<endl;
+								}
+								plikWejscie.close();
+								plikWyjscie.close();
+								break;
+	}
+	}
+}

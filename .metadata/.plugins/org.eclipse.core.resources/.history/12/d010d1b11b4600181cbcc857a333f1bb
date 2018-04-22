@@ -1,0 +1,334 @@
+/*
+ * TestowaniePojedyncze.cpp
+ *
+ *  Created on: 15 kwi 2018
+ *      Author: kuba
+ */
+
+#include "TestowaniePojedyncze.h"
+#include "MierzenieCzasu.h"
+#include "Tablica.h"
+#include "Lista.h"
+#include "Kopiec.h"
+#include "Drzewo.h"
+#include <iostream>
+
+using namespace std;
+
+
+void TestowaniePojedyncze::testowanieTablicy() {
+    MierzenieCzasu mierzenieCzasu;
+    Tablica tablica;
+    int wartosc;
+    int miejsce;
+    int wybor=10;
+
+    while (wybor != 0) {
+    	cout<<"Podaj liczbe funkcji z ktorej chcesz skorzystac"<<endl;
+    		cout<<"1.Dodanie na początek"<<endl;
+    		cout<<"2.Dodanie gdzieś"<<endl;
+    		cout<<"3.Dodanie na koniec"<<endl;
+    		cout<<"4.Usuniecie pierwszego"<<endl;
+    		cout<<"5.Usuniecie gdzies"<<endl;
+    		cout<<"6.Usun koniec"<<endl;
+    		cout<<"7.Wyswietlenie tablicy"<<endl;
+    		cout<<"8.Znalezienie elementu"<<endl;
+    		cout<<"0. Wyjscie"<<endl;
+    		cin>>wybor;
+        switch (wybor) {
+            case 0:
+                break;
+
+            case 1:
+                cout<<"Jaką wartość chcesz dodać? ";
+                cin>>wartosc;
+                mierzenieCzasu.startCzas();
+                tablica.dodajPoczatek(wartosc);
+                mierzenieCzasu.stopCzas();
+                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+                break;
+
+            case 2:
+
+                cout << "Jaką wartość chcesz dodać?: ";
+                           cin>>wartosc;
+                               cout << "Na jakim miejscu chcesz dodać?: ";
+                               cin >> miejsce;
+                               mierzenieCzasu.startCzas();
+                               tablica.dodajGdzies(wartosc, miejsce);
+                               mierzenieCzasu.stopCzas();
+                               cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+                               break;
+
+            case 3:
+            	  cout << "Jaką wartość chcesz dodać?: ";
+            	                cin>>wartosc;
+            	                mierzenieCzasu.startCzas();
+            	                tablica.dodajKoniec(wartosc);
+            	                mierzenieCzasu.stopCzas();
+            	                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+            	                break;
+
+            case 4:
+                mierzenieCzasu.startCzas();
+                tablica.usunPoczatek();
+                mierzenieCzasu.stopCzas();
+                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund"<<endl;
+                break;
+
+            case 5:
+                cout << "Z której pozycji chcesz usunąć: ";
+                                cin >> miejsce;
+                                mierzenieCzasu.startCzas();
+                                tablica.usunGdzies(miejsce);
+                                mierzenieCzasu.stopCzas();
+                                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+                                break;
+
+            case 6:
+            	  mierzenieCzasu.startCzas();
+            	                tablica.usunKoniec();
+            	                mierzenieCzasu.stopCzas();
+            	                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" <<endl;
+            	                break;
+
+            case 7:
+                mierzenieCzasu.startCzas();
+                                tablica.wyswietlTablice();
+                                mierzenieCzasu.stopCzas();
+                                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+                                break;
+
+            case 8:
+            	 cout << "Jaką wartość chcesz znalezc?: ";
+            	                cin >> wartosc;
+            	                mierzenieCzasu.startCzas();
+            	                tablica.czyIstnieje(wartosc);
+            	                mierzenieCzasu.stopCzas();
+            	                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+            	                break;
+
+            default:
+            	cout<<"Podaj prawidlowy numer"<<endl;
+        }
+
+    }
+}
+
+void TestowaniePojedyncze::testowanieListy() {
+	MierzenieCzasu mierzenieCzasu;
+	    Lista lista;
+	    int wartosc;
+	    int miejsce;
+	    int wybor=10;
+
+	    while (wybor != 0) {
+	    	cout<<"Podaj liczbe funkcji z ktorej chcesz skorzystac"<<endl;
+	    		cout<<"1.Dodanie na początek"<<endl;
+	    		cout<<"2.Dodanie gdzieś"<<endl;
+	    		cout<<"3.Dodanie na koniec"<<endl;
+	    		cout<<"4.Usuniecie pierwszego"<<endl;
+	    		cout<<"5.Usuniecie gdzies"<<endl;
+	    		cout<<"6.Usun koniec"<<endl;
+	    		cout<<"7.Wyswietlenie tablicy"<<endl;
+	    		cout<<"8.Znalezienie elementu"<<endl;
+	    		cout<<"0. Wyjscie"<<endl;
+	    		cin>>wybor;
+	        switch (wybor) {
+	            case 0:
+	                break;
+
+	            case 1:
+	                cout<<"Jaką wartość chcesz dodać? ";
+	                cin>>wartosc;
+	                mierzenieCzasu.startCzas();
+	                lista.dodajPoczatek(wartosc);
+	                mierzenieCzasu.stopCzas();
+	                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+	                break;
+
+	            case 2:
+
+	                cout << "Jaką wartość chcesz dodać?: ";
+	                           cin>>wartosc;
+	                               cout << "Na jakim miejscu chcesz dodać?: ";
+	                               cin >> miejsce;
+	                               mierzenieCzasu.startCzas();
+	                               lista.dodajGdzies(wartosc, miejsce);
+	                               mierzenieCzasu.stopCzas();
+	                               cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+	                               break;
+
+	            case 3:
+	            	  cout << "Jaką wartość chcesz dodać?: ";
+	            	                cin>>wartosc;
+	            	                mierzenieCzasu.startCzas();
+	            	                lista.dodajKoniec(wartosc);
+	            	                mierzenieCzasu.stopCzas();
+	            	                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+	            	                break;
+
+	            case 4:
+	                mierzenieCzasu.startCzas();
+	                lista.usunPoczatek();
+	                mierzenieCzasu.stopCzas();
+	                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund"<<endl;
+	                break;
+
+	            case 5:
+	                cout << "Z której pozycji chcesz usunąć: ";
+	                                cin >> miejsce;
+	                                mierzenieCzasu.startCzas();
+	                                lista.usunGdzies(miejsce);
+	                                mierzenieCzasu.stopCzas();
+	                                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+	                                break;
+
+	            case 6:
+	            	  mierzenieCzasu.startCzas();
+	            	                lista.usunKoniec();
+	            	                mierzenieCzasu.stopCzas();
+	            	                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" <<endl;
+	            	                break;
+
+	            case 7:
+	                mierzenieCzasu.startCzas();
+	                                lista.wyswietlListe();
+	                                mierzenieCzasu.stopCzas();
+	                                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+	                                break;
+
+	            case 8:
+	            	 cout << "Jaką wartość chcesz znalezc?: ";
+	            	                cin >> wartosc;
+	            	                mierzenieCzasu.startCzas();
+	            	                lista.czyIstnieje(wartosc);
+	            	                mierzenieCzasu.stopCzas();
+	            	                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+	            	                break;
+
+	            default:
+	            	cout<<"Podaj prawidlowa liczbe"<<endl;
+	        }
+
+	    }
+	}
+
+void TestowaniePojedyncze::testowanieKopca() {
+    MierzenieCzasu mierzenieCzasu;
+    Kopiec kopiec;
+    int wartosc;
+    int wybor = 10;
+    while (wybor != 0) {
+    	cout<<"Podaj liczbe funkcji z ktorej chcesz skorzystac"<<endl;
+    							cout<<"1.Dodanie"<<endl;
+    							cout<<"2.Usuniecie"<<endl;
+    							cout<<"3.Wyswietlenie"<<endl;
+    							cout<<"4.Wyszukanie"<<endl;
+    							cout<<"0. Wyjscie"<<endl;
+    							cin>>wybor;
+        switch (wybor) {
+            case 0:
+                break;
+
+            case 1:
+                cout << "Jaka wartosc chcesz dodac?: ";
+                cin >> wartosc;
+                mierzenieCzasu.startCzas();
+                kopiec.dodaj(wartosc);
+                mierzenieCzasu.stopCzas();
+                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+                break;
+
+            case 2:
+                cout << "Jaka wartosc chcesz usunac?: ";
+                cin >> wartosc;
+                mierzenieCzasu.startCzas();
+                kopiec.usun(wartosc);
+                mierzenieCzasu.stopCzas();
+                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+                break;
+
+            case 3:
+                mierzenieCzasu.startCzas();
+                                kopiec.wyswietl("","",0);
+                                mierzenieCzasu.stopCzas();
+                                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+                                break;
+
+            case 4:
+            	 cout << "Jaka wartosc chcesz znalezc?: ";
+            	                cin >> wartosc;
+            	                mierzenieCzasu.startCzas();
+            	                kopiec.czyIstnieje(wartosc);
+            	                mierzenieCzasu.stopCzas();
+            	                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+            	                break;
+
+            default:
+                            cout << "Podaj prawidlowa liczbe" << endl;
+                            break;
+        }
+
+    }
+}
+
+void TestowaniePojedyncze::testowanieDrzewa() {
+    MierzenieCzasu mierzenieCzasu;
+    Drzewo drzewo;
+    int wartosc;
+    int wybor = 10;
+    while (wybor != 0) {
+    	cout<<"Podaj liczbe funkcji z ktorej chcesz skorzystac"<<endl;
+    							cout<<"1.Dodanie"<<endl;
+    							cout<<"2.Usuniecie"<<endl;
+    							cout<<"3.Wyswietlenie"<<endl;
+    							cout<<"4.Wyszukanie"<<endl;
+    							cout<<"0. Wyjscie"<<endl;
+    							cin>>wybor;
+        switch (wybor) {
+            case 0:
+                break;
+
+            case 1:
+                cout << "Jaka wartosc chcesz dodac?: ";
+                cin >> wartosc;
+                mierzenieCzasu.startCzas();
+                drzewo.dodaj(wartosc);
+                mierzenieCzasu.stopCzas();
+                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+                break;
+
+            case 2:
+                cout << "Jaka wartosc chcesz usunac?: ";
+                cin >> wartosc;
+                mierzenieCzasu.startCzas();
+                drzewo.usun(wartosc);
+                mierzenieCzasu.stopCzas();
+                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+                break;
+
+            case 3:
+                mierzenieCzasu.startCzas();
+                				cout<<"brak implementacji";
+                                //drzewo.wyswietlKopiec();
+                                mierzenieCzasu.stopCzas();
+                                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+                                break;
+
+            case 4:
+            	 cout << "Jaka wartosc chcesz znalezc?: ";
+            	                cin >> wartosc;
+            	                mierzenieCzasu.startCzas();
+            	                drzewo.czyIstnieje(wartosc);
+            	                mierzenieCzasu.stopCzas();
+            	                cout << "Czas trwania: " << mierzenieCzasu.ileZajelo() << "nanosekund" << endl;
+            	                break;
+
+            default:
+                            cout << "Podaj prawidlowa liczbe" << endl;
+                            break;
+        }
+
+    }
+}

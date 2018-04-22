@@ -1,7 +1,3 @@
-
-
-//dodaj nowe linie
-
 #include "Tablica.h"
 #include <iostream>
 
@@ -22,6 +18,12 @@ Tablica::~Tablica() {
 	}
 }
 
+void Tablica::wypelnij(int tablica[],int rozmiar2){
+	delete head;
+	head=tablica;
+	rozmiar=rozmiar2;
+}
+
 void Tablica::dodajPoczatek(int wartosc){
 
 	int *nowyHead=new int[rozmiar+1];			//nowa tablica o 1 większa
@@ -29,7 +31,7 @@ void Tablica::dodajPoczatek(int wartosc){
 
 	for(int i=0; i<rozmiar; i++){				//przepisanie wartości do nowej
 
-		nowyHead[i+1]=nowyHead[i];
+		nowyHead[i+1]=head[i];
 
 	}
 
@@ -61,7 +63,7 @@ void Tablica::dodajGdzies(int wartosc, int miejsce){
 	}
 }
 
-void Tablica::dodajKoniec(int wartosc){
+void Tablica::dodajKoniec(int wartosc){					//to nie jestem pewny czy dobrze
 
 	int *nowyHead=new int[rozmiar+1];					//nowa tablica
 	nowyHead[rozmiar]=wartosc;							//przypisanie na koniec

@@ -1,0 +1,20 @@
+/*
+ * Testowanie.h
+ *
+ *  Created on: 8 kwi 2018
+ *      Author: kuba
+ */
+#ifndef BIGTEST_H
+#define BIGTEST_H
+class BigTest{
+public:
+
+    void testowanieTablicy(int rozmiar);
+    void testowanieListy();
+    void testowanieKopca();
+
+};
+
+
+
+#endif /* BIGTEST_H */
