@@ -1,4 +1,3 @@
-
 #include "DrzewoElement.h"
 
 DrzewoElement::DrzewoElement() {

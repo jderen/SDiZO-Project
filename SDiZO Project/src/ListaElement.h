@@ -1,4 +1,3 @@
-
 #ifndef LISTAELEMENT_H_
 #define LISTAELEMENT_H_
 
@@ -8,8 +7,8 @@ public:
 	ListaElement *nast;				//nastepny element
 	int wartosc;
 
-
 	ListaElement(int wartosc, ListaElement *poprzedni, ListaElement *nastepny);
+	ListaElement();
 	virtual ~ListaElement();
 
 };

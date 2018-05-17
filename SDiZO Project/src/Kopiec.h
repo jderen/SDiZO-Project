@@ -1,5 +1,4 @@
 
-
 #ifndef KOPIEC_H_
 #define KOPIEC_H_
 #include <iostream>
@@ -20,6 +19,7 @@ public:
 	void wyswietlKopiec();
 	void wyswietl(string, string, int);
 	void uporzadkuj();
+
 };
 
 #endif /* KOPIEC_H_ */

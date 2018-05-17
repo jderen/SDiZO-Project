@@ -1,0 +1,47 @@
+/*
+ * Generator.cpp
+ *
+ *  Created on: 22 kwi 2018
+ *      Author: kuba
+ */
+
+#include "Generator.h"
+#include <stdlib.h>
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+void Generator::stworzPlik(int rozmiar) {//tworzymy plik z losowymi wartosciami
+	ofstream plik;
+	srand(time(NULL));
+	plik.open("Losowe.txt", ios::trunc);
+
+	int losowe;
+	if (plik.is_open()) {
+		for (int i = 0; i < rozmiar; i++) {
+			losowe = rand() % 1000;
+			plik << losowe << "\n";
+		}
+		plik.close();
+	} else {
+		cout << "Blad otwarcia pliku/zapisu";
+	}
+
+}
+void Generator::przeczytajZPliku() {
+	int linia;
+	ifstream plik;
+
+	plik.open("Losowe.txt");
+	if (plik.is_open()) {
+		while (plik >> linia) {						//czytamy z pliku wartosci
+			cout << linia << "\n";
+		}
+		plik.close();
+	} else {
+		cout << "Blad otwarcia/zapisu pliku";
+	}
+
+}
+

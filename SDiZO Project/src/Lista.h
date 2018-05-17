@@ -1,11 +1,9 @@
 
-
 #ifndef LISTA_H_
 #define LISTA_H_
 
 #include "ListaElement.h"
 #include <iostream>
-
 
 class Lista {
 public:
@@ -26,8 +24,6 @@ public:
 	void usunKoniec();
 	bool czyIstnieje(int wartosc);
 	void wyswietlListe();
-
-
 
 };
 

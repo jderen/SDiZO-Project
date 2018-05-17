@@ -6,16 +6,14 @@
  */
 #ifndef TESTOWANIE_H
 #define TESTOWANIE_H
-class Testowanie{
+class Testowanie {
 public:
 
-    void testowanieTablicy(int rozmiar);
-    void testowanieListy();
-    void testowanieKopca();
-    void testowanieDrzewa();
+	void testowanieTablicy(int rozmiar);
+	void testowanieListy();
+	void testowanieKopca();
+	void testowanieDrzewa();
 
 };
-
-
 
 #endif /* TESTOWANIE_H */

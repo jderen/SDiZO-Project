@@ -10,8 +10,8 @@
 
 class ZapisanieRezultatow {
 public:
-    void zapiszDoPliku(double czas);
-    void usunPlik();
+	void zapiszDoPliku(double czas);
+	void usunPlik();
 };
 
 #endif /* ZAPISANIEREZULTATOW_H_ */

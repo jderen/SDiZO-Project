@@ -10,8 +10,8 @@
 
 class Generator {
 public:
-    void stworzPlik(int rozmiar);
-    void przeczytajZPliku();
+	void stworzPlik(int rozmiar);
+	void przeczytajZPliku();
 };
 
 #endif /* GENERATOR_H_ */

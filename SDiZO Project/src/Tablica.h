@@ -1,4 +1,3 @@
-
 #ifndef TABLICA_H_
 #define TABLICA_H_
 
@@ -22,7 +21,7 @@ public:
 	bool czyIstnieje(int wartosc);
 	void wyswietlTablice();
 
-	void wypelnij(int tablica[],int rozmiar2);
+	void wypelnij(int tablica[], int rozmiar2);
 };
 
 #endif /* TABLICA_H_ */

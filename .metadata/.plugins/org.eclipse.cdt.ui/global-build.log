@@ -12516,3 +12516,961 @@ Invoking: GCC C++ Linker
 g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
 Finished building target: SDiZO Project
  
+00:09:12 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+00:09:25 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+00:09:53 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+00:12:08 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+00:12:27 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+00:16:37 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+00:18:36 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Drzewo.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Drzewo.d" -MT"src/Drzewo.o" -o "src/Drzewo.o" "../src/Drzewo.cpp"
+Finished building: ../src/Drzewo.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+00:20:29 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Drzewo.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Drzewo.d" -MT"src/Drzewo.o" -o "src/Drzewo.o" "../src/Drzewo.cpp"
+Finished building: ../src/Drzewo.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+00:23:30 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Drzewo.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Drzewo.d" -MT"src/Drzewo.o" -o "src/Drzewo.o" "../src/Drzewo.cpp"
+Finished building: ../src/Drzewo.cpp
+ 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
+ 
+Building file: ../src/SDiZO Project.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDiZO Project.d" -MT"src/SDiZO\ Project.d" -o "src/SDiZO Project.o" "../src/SDiZO Project.cpp"
+../src/SDiZO Project.cpp: In function ‘int main(int, char**)’:
+../src/SDiZO Project.cpp:50:21: error: ‘class Testowanie’ has no member named ‘testowanieDrzewa’
+          testowanie.testowanieDrzewa();
+                     ^
+../src/SDiZO Project.cpp:16:26: warning: unused variable ‘testowaniePojedyncze’ [-Wunused-variable]
+     TestowaniePojedyncze testowaniePojedyncze;
+                          ^
+make: *** [src/SDiZO Project.o] Błąd 1
+src/subdir.mk:58: polecenia dla obiektu 'src/SDiZO Project.o' nie powiodły się
+00:23:46 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/SDiZO Project.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDiZO Project.d" -MT"src/SDiZO\ Project.d" -o "src/SDiZO Project.o" "../src/SDiZO Project.cpp"
+../src/SDiZO Project.cpp: In function ‘int main(int, char**)’:
+../src/SDiZO Project.cpp:16:26: warning: unused variable ‘testowaniePojedyncze’ [-Wunused-variable]
+     TestowaniePojedyncze testowaniePojedyncze;
+                          ^
+Finished building: ../src/SDiZO Project.cpp
+ 
+Building file: ../src/Testowanie.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Testowanie.d" -MT"src/Testowanie.o" -o "src/Testowanie.o" "../src/Testowanie.cpp"
+Finished building: ../src/Testowanie.cpp
+ 
+Building file: ../src/TestowaniePojedyncze.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TestowaniePojedyncze.d" -MT"src/TestowaniePojedyncze.o" -o "src/TestowaniePojedyncze.o" "../src/TestowaniePojedyncze.cpp"
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieKopca(Kopiec)’:
+../src/TestowaniePojedyncze.cpp:305:9: warning: unused variable ‘index’ [-Wunused-variable]
+     int index=0;
+         ^
+Finished building: ../src/TestowaniePojedyncze.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+00:24:27 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/SDiZO Project.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDiZO Project.d" -MT"src/SDiZO\ Project.d" -o "src/SDiZO Project.o" "../src/SDiZO Project.cpp"
+../src/SDiZO Project.cpp: In function ‘int main(int, char**)’:
+../src/SDiZO Project.cpp:16:26: warning: unused variable ‘testowaniePojedyncze’ [-Wunused-variable]
+     TestowaniePojedyncze testowaniePojedyncze;
+                          ^
+Finished building: ../src/SDiZO Project.cpp
+ 
+Building file: ../src/Testowanie.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Testowanie.d" -MT"src/Testowanie.o" -o "src/Testowanie.o" "../src/Testowanie.cpp"
+Finished building: ../src/Testowanie.cpp
+ 
+Building file: ../src/TestowaniePojedyncze.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TestowaniePojedyncze.d" -MT"src/TestowaniePojedyncze.o" -o "src/TestowaniePojedyncze.o" "../src/TestowaniePojedyncze.cpp"
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieKopca(Kopiec)’:
+../src/TestowaniePojedyncze.cpp:305:9: warning: unused variable ‘index’ [-Wunused-variable]
+     int index=0;
+         ^
+Finished building: ../src/TestowaniePojedyncze.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+00:25:15 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/SDiZO Project.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDiZO Project.d" -MT"src/SDiZO\ Project.d" -o "src/SDiZO Project.o" "../src/SDiZO Project.cpp"
+In file included from ../src/SDiZO Project.cpp:3:0:
+../src/TestowaniePojedyncze.h:21:24: error: ‘Drzewo’ has not been declared
+  void testowanieDrzewa(Drzewo drzewo);
+                        ^
+../src/SDiZO Project.cpp: In function ‘int main(int, char**)’:
+../src/SDiZO Project.cpp:16:26: warning: unused variable ‘testowaniePojedyncze’ [-Wunused-variable]
+     TestowaniePojedyncze testowaniePojedyncze;
+                          ^
+make: *** [src/SDiZO Project.o] Błąd 1
+src/subdir.mk:58: polecenia dla obiektu 'src/SDiZO Project.o' nie powiodły się
+00:25:39 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/SDiZO Project.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDiZO Project.d" -MT"src/SDiZO\ Project.d" -o "src/SDiZO Project.o" "../src/SDiZO Project.cpp"
+../src/SDiZO Project.cpp: In function ‘int main(int, char**)’:
+../src/SDiZO Project.cpp:16:26: warning: unused variable ‘testowaniePojedyncze’ [-Wunused-variable]
+     TestowaniePojedyncze testowaniePojedyncze;
+                          ^
+Finished building: ../src/SDiZO Project.cpp
+ 
+Building file: ../src/Testowanie.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Testowanie.d" -MT"src/Testowanie.o" -o "src/Testowanie.o" "../src/Testowanie.cpp"
+Finished building: ../src/Testowanie.cpp
+ 
+Building file: ../src/TestowaniePojedyncze.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TestowaniePojedyncze.d" -MT"src/TestowaniePojedyncze.o" -o "src/TestowaniePojedyncze.o" "../src/TestowaniePojedyncze.cpp"
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieKopca(Kopiec)’:
+../src/TestowaniePojedyncze.cpp:305:9: warning: unused variable ‘index’ [-Wunused-variable]
+     int index=0;
+         ^
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieDrzewa(Drzewo)’:
+../src/TestowaniePojedyncze.cpp:391:9: warning: unused variable ‘index’ [-Wunused-variable]
+     int index=0;
+         ^
+Finished building: ../src/TestowaniePojedyncze.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+00:25:48 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+13:36:21 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+14:02:35 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
+ 
+Building file: ../src/TestowaniePojedyncze.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TestowaniePojedyncze.d" -MT"src/TestowaniePojedyncze.o" -o "src/TestowaniePojedyncze.o" "../src/TestowaniePojedyncze.cpp"
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieKopca(Kopiec)’:
+../src/TestowaniePojedyncze.cpp:305:9: warning: unused variable ‘index’ [-Wunused-variable]
+     int index=0;
+         ^
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieDrzewa(Drzewo)’:
+../src/TestowaniePojedyncze.cpp:391:9: warning: unused variable ‘index’ [-Wunused-variable]
+     int index=0;
+         ^
+Finished building: ../src/TestowaniePojedyncze.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+14:12:25 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+../src/Kopiec.cpp: In member function ‘void Kopiec::printBT(std::__cxx11::string, std::__cxx11::string, int)’:
+../src/Kopiec.cpp:136:24: error: ‘T’ was not declared in this scope
+     cout << s << sn << T[v] << endl;
+                        ^
+make: *** [src/Kopiec.o] Błąd 1
+src/subdir.mk:51: polecenia dla obiektu 'src/Kopiec.o' nie powiodły się
+14:13:00 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
+ 
+Building file: ../src/SDiZO Project.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDiZO Project.d" -MT"src/SDiZO\ Project.d" -o "src/SDiZO Project.o" "../src/SDiZO Project.cpp"
+../src/SDiZO Project.cpp: In function ‘int main(int, char**)’:
+../src/SDiZO Project.cpp:16:26: warning: unused variable ‘testowaniePojedyncze’ [-Wunused-variable]
+     TestowaniePojedyncze testowaniePojedyncze;
+                          ^
+Finished building: ../src/SDiZO Project.cpp
+ 
+Building file: ../src/Testowanie.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Testowanie.d" -MT"src/Testowanie.o" -o "src/Testowanie.o" "../src/Testowanie.cpp"
+Finished building: ../src/Testowanie.cpp
+ 
+Building file: ../src/TestowaniePojedyncze.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TestowaniePojedyncze.d" -MT"src/TestowaniePojedyncze.o" -o "src/TestowaniePojedyncze.o" "../src/TestowaniePojedyncze.cpp"
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieKopca(Kopiec)’:
+../src/TestowaniePojedyncze.cpp:305:9: warning: unused variable ‘index’ [-Wunused-variable]
+     int index=0;
+         ^
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieDrzewa(Drzewo)’:
+../src/TestowaniePojedyncze.cpp:391:9: warning: unused variable ‘index’ [-Wunused-variable]
+     int index=0;
+         ^
+Finished building: ../src/TestowaniePojedyncze.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+14:13:32 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+14:15:38 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
+ 
+Building file: ../src/SDiZO Project.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDiZO Project.d" -MT"src/SDiZO\ Project.d" -o "src/SDiZO Project.o" "../src/SDiZO Project.cpp"
+../src/SDiZO Project.cpp: In function ‘int main(int, char**)’:
+../src/SDiZO Project.cpp:16:26: warning: unused variable ‘testowaniePojedyncze’ [-Wunused-variable]
+     TestowaniePojedyncze testowaniePojedyncze;
+                          ^
+Finished building: ../src/SDiZO Project.cpp
+ 
+Building file: ../src/Testowanie.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Testowanie.d" -MT"src/Testowanie.o" -o "src/Testowanie.o" "../src/Testowanie.cpp"
+Finished building: ../src/Testowanie.cpp
+ 
+Building file: ../src/TestowaniePojedyncze.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TestowaniePojedyncze.d" -MT"src/TestowaniePojedyncze.o" -o "src/TestowaniePojedyncze.o" "../src/TestowaniePojedyncze.cpp"
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieKopca(Kopiec)’:
+../src/TestowaniePojedyncze.cpp:305:9: warning: unused variable ‘index’ [-Wunused-variable]
+     int index=0;
+         ^
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieDrzewa(Drzewo)’:
+../src/TestowaniePojedyncze.cpp:391:9: warning: unused variable ‘index’ [-Wunused-variable]
+     int index=0;
+         ^
+Finished building: ../src/TestowaniePojedyncze.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+14:15:49 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+14:16:00 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+14:26:17 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Drzewo.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Drzewo.d" -MT"src/Drzewo.o" -o "src/Drzewo.o" "../src/Drzewo.cpp"
+Finished building: ../src/Drzewo.cpp
+ 
+Building file: ../src/DrzewoElement.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DrzewoElement.d" -MT"src/DrzewoElement.o" -o "src/DrzewoElement.o" "../src/DrzewoElement.cpp"
+Finished building: ../src/DrzewoElement.cpp
+ 
+Building file: ../src/Generator.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Generator.d" -MT"src/Generator.o" -o "src/Generator.o" "../src/Generator.cpp"
+Finished building: ../src/Generator.cpp
+ 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
+ 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+Finished building: ../src/Lista.cpp
+ 
+Building file: ../src/ListaElement.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ListaElement.d" -MT"src/ListaElement.o" -o "src/ListaElement.o" "../src/ListaElement.cpp"
+Finished building: ../src/ListaElement.cpp
+ 
+Building file: ../src/MierzenieCzasu.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MierzenieCzasu.d" -MT"src/MierzenieCzasu.o" -o "src/MierzenieCzasu.o" "../src/MierzenieCzasu.cpp"
+Finished building: ../src/MierzenieCzasu.cpp
+ 
+Building file: ../src/SDiZO Project.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDiZO Project.d" -MT"src/SDiZO\ Project.d" -o "src/SDiZO Project.o" "../src/SDiZO Project.cpp"
+../src/SDiZO Project.cpp: In function ‘int main(int, char**)’:
+../src/SDiZO Project.cpp:15:23: warning: unused variable ‘testowaniePojedyncze’ [-Wunused-variable]
+  TestowaniePojedyncze testowaniePojedyncze;
+                       ^
+Finished building: ../src/SDiZO Project.cpp
+ 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+Finished building: ../src/Tablica.cpp
+ 
+Building file: ../src/Testowanie.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Testowanie.d" -MT"src/Testowanie.o" -o "src/Testowanie.o" "../src/Testowanie.cpp"
+Finished building: ../src/Testowanie.cpp
+ 
+Building file: ../src/TestowaniePojedyncze.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TestowaniePojedyncze.d" -MT"src/TestowaniePojedyncze.o" -o "src/TestowaniePojedyncze.o" "../src/TestowaniePojedyncze.cpp"
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieKopca(Kopiec)’:
+../src/TestowaniePojedyncze.cpp:284:6: warning: unused variable ‘index’ [-Wunused-variable]
+  int index = 0;
+      ^
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieDrzewa(Drzewo)’:
+../src/TestowaniePojedyncze.cpp:363:6: warning: unused variable ‘index’ [-Wunused-variable]
+  int index = 0;
+      ^
+Finished building: ../src/TestowaniePojedyncze.cpp
+ 
+Building file: ../src/ZapisanieRezultatow.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ZapisanieRezultatow.d" -MT"src/ZapisanieRezultatow.o" -o "src/ZapisanieRezultatow.o" "../src/ZapisanieRezultatow.cpp"
+Finished building: ../src/ZapisanieRezultatow.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+14:29:59 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+14:30:42 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
+ 
+Building file: ../src/TestowaniePojedyncze.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TestowaniePojedyncze.d" -MT"src/TestowaniePojedyncze.o" -o "src/TestowaniePojedyncze.o" "../src/TestowaniePojedyncze.cpp"
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieKopca(Kopiec)’:
+../src/TestowaniePojedyncze.cpp:284:6: warning: unused variable ‘index’ [-Wunused-variable]
+  int index = 0;
+      ^
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieDrzewa(Drzewo)’:
+../src/TestowaniePojedyncze.cpp:363:6: warning: unused variable ‘index’ [-Wunused-variable]
+  int index = 0;
+      ^
+Finished building: ../src/TestowaniePojedyncze.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+14:31:19 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/TestowaniePojedyncze.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TestowaniePojedyncze.d" -MT"src/TestowaniePojedyncze.o" -o "src/TestowaniePojedyncze.o" "../src/TestowaniePojedyncze.cpp"
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieKopca(Kopiec)’:
+../src/TestowaniePojedyncze.cpp:284:6: warning: unused variable ‘index’ [-Wunused-variable]
+  int index = 0;
+      ^
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieDrzewa(Drzewo)’:
+../src/TestowaniePojedyncze.cpp:363:6: warning: unused variable ‘index’ [-Wunused-variable]
+  int index = 0;
+      ^
+Finished building: ../src/TestowaniePojedyncze.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+14:32:16 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+14:37:58 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Drzewo.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Drzewo.d" -MT"src/Drzewo.o" -o "src/Drzewo.o" "../src/Drzewo.cpp"
+Finished building: ../src/Drzewo.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+14:40:15 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/TestowaniePojedyncze.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TestowaniePojedyncze.d" -MT"src/TestowaniePojedyncze.o" -o "src/TestowaniePojedyncze.o" "../src/TestowaniePojedyncze.cpp"
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieKopca(Kopiec)’:
+../src/TestowaniePojedyncze.cpp:284:6: warning: unused variable ‘index’ [-Wunused-variable]
+  int index = 0;
+      ^
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieDrzewa(Drzewo)’:
+../src/TestowaniePojedyncze.cpp:363:6: warning: unused variable ‘index’ [-Wunused-variable]
+  int index = 0;
+      ^
+Finished building: ../src/TestowaniePojedyncze.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+15:16:05 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/TestowaniePojedyncze.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TestowaniePojedyncze.d" -MT"src/TestowaniePojedyncze.o" -o "src/TestowaniePojedyncze.o" "../src/TestowaniePojedyncze.cpp"
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieKopca(Kopiec)’:
+../src/TestowaniePojedyncze.cpp:284:6: warning: unused variable ‘index’ [-Wunused-variable]
+  int index = 0;
+      ^
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieDrzewa(Drzewo)’:
+../src/TestowaniePojedyncze.cpp:363:6: warning: unused variable ‘index’ [-Wunused-variable]
+  int index = 0;
+      ^
+Finished building: ../src/TestowaniePojedyncze.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+15:17:45 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+Finished building: ../src/Lista.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+15:19:10 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+15:19:28 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+15:19:59 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+15:30:39 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+Finished building: ../src/Tablica.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+15:33:04 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+Finished building: ../src/Tablica.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+15:34:17 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+Finished building: ../src/Tablica.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+15:46:51 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Tablica.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Tablica.d" -MT"src/Tablica.o" -o "src/Tablica.o" "../src/Tablica.cpp"
+Finished building: ../src/Tablica.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+15:50:29 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+15:54:43 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+16:07:10 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+16:09:15 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/TestowaniePojedyncze.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TestowaniePojedyncze.d" -MT"src/TestowaniePojedyncze.o" -o "src/TestowaniePojedyncze.o" "../src/TestowaniePojedyncze.cpp"
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieKopca(Kopiec)’:
+../src/TestowaniePojedyncze.cpp:284:6: warning: unused variable ‘index’ [-Wunused-variable]
+  int index = 0;
+      ^
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieDrzewa(Drzewo)’:
+../src/TestowaniePojedyncze.cpp:363:6: warning: unused variable ‘index’ [-Wunused-variable]
+  int index = 0;
+      ^
+Finished building: ../src/TestowaniePojedyncze.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+16:10:42 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+16:18:06 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+../src/Lista.cpp: In member function ‘void Lista::usunGdzies(int)’:
+../src/Lista.cpp:97:44: error: expected ‘)’ before ‘{’ token
+      if(miejsce==0 && poczatek->nast ==NULL{
+                                            ^
+../src/Lista.cpp:124:1: error: expected primary-expression before ‘}’ token
+ }
+ ^
+src/subdir.mk:51: polecenia dla obiektu 'src/Lista.o' nie powiodły się
+make: *** [src/Lista.o] Błąd 1
+16:18:45 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+../src/Lista.cpp: In member function ‘void Lista::usunGdzies(int)’:
+../src/Lista.cpp:97:47: error: expected ‘)’ before ‘{’ token
+      if(miejsce==0 && poczatek->nast ==nullptr{
+                                               ^
+../src/Lista.cpp:124:1: error: expected primary-expression before ‘}’ token
+ }
+ ^
+src/subdir.mk:51: polecenia dla obiektu 'src/Lista.o' nie powiodły się
+make: *** [src/Lista.o] Błąd 1
+16:19:50 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+../src/Lista.cpp: In member function ‘void Lista::usunGdzies(int)’:
+../src/Lista.cpp:97:47: error: expected ‘)’ before ‘{’ token
+      if(miejsce==0 && poczatek->nast ==nullptr{
+                                               ^
+../src/Lista.cpp:124:1: error: expected primary-expression before ‘}’ token
+ }
+ ^
+make: *** [src/Lista.o] Błąd 1
+src/subdir.mk:51: polecenia dla obiektu 'src/Lista.o' nie powiodły się
+16:20:04 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+Finished building: ../src/Lista.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+16:22:11 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+../src/Lista.cpp: In member function ‘void Lista::usunGdzies(int)’:
+../src/Lista.cpp:113:35: error: no matching function for call to ‘ListaElement::ListaElement()’
+          ListaElement *before=new ListaElement;
+                                   ^
+In file included from ../src/Lista.h:5:0,
+                 from ../src/Lista.cpp:2:
+../src/ListaElement.h:10:2: note: candidate: ListaElement::ListaElement(int, ListaElement*, ListaElement*)
+  ListaElement(int wartosc, ListaElement *poprzedni, ListaElement *nastepny);
+  ^
+../src/ListaElement.h:10:2: note:   candidate expects 3 arguments, 0 provided
+../src/ListaElement.h:4:7: note: candidate: constexpr ListaElement::ListaElement(const ListaElement&)
+ class ListaElement {
+       ^
+../src/ListaElement.h:4:7: note:   candidate expects 1 argument, 0 provided
+../src/Lista.cpp:114:36: error: no matching function for call to ‘ListaElement::ListaElement()’
+          ListaElement *current=new ListaElement;
+                                    ^
+In file included from ../src/Lista.h:5:0,
+                 from ../src/Lista.cpp:2:
+../src/ListaElement.h:10:2: note: candidate: ListaElement::ListaElement(int, ListaElement*, ListaElement*)
+  ListaElement(int wartosc, ListaElement *poprzedni, ListaElement *nastepny);
+  ^
+../src/ListaElement.h:10:2: note:   candidate expects 3 arguments, 0 provided
+../src/ListaElement.h:4:7: note: candidate: constexpr ListaElement::ListaElement(const ListaElement&)
+ class ListaElement {
+       ^
+../src/ListaElement.h:4:7: note:   candidate expects 1 argument, 0 provided
+src/subdir.mk:51: polecenia dla obiektu 'src/Lista.o' nie powiodły się
+make: *** [src/Lista.o] Błąd 1
+16:22:26 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+../src/Lista.cpp: In member function ‘void Lista::usunGdzies(int)’:
+../src/Lista.cpp:113:48: error: no matching function for call to ‘ListaElement::ListaElement()’
+          ListaElement *before=new ListaElement();
+                                                ^
+In file included from ../src/Lista.h:5:0,
+                 from ../src/Lista.cpp:2:
+../src/ListaElement.h:10:2: note: candidate: ListaElement::ListaElement(int, ListaElement*, ListaElement*)
+  ListaElement(int wartosc, ListaElement *poprzedni, ListaElement *nastepny);
+  ^
+../src/ListaElement.h:10:2: note:   candidate expects 3 arguments, 0 provided
+../src/ListaElement.h:4:7: note: candidate: constexpr ListaElement::ListaElement(const ListaElement&)
+ class ListaElement {
+       ^
+../src/ListaElement.h:4:7: note:   candidate expects 1 argument, 0 provided
+../src/Lista.cpp:114:49: error: no matching function for call to ‘ListaElement::ListaElement()’
+          ListaElement *current=new ListaElement();
+                                                 ^
+In file included from ../src/Lista.h:5:0,
+                 from ../src/Lista.cpp:2:
+../src/ListaElement.h:10:2: note: candidate: ListaElement::ListaElement(int, ListaElement*, ListaElement*)
+  ListaElement(int wartosc, ListaElement *poprzedni, ListaElement *nastepny);
+  ^
+../src/ListaElement.h:10:2: note:   candidate expects 3 arguments, 0 provided
+../src/ListaElement.h:4:7: note: candidate: constexpr ListaElement::ListaElement(const ListaElement&)
+ class ListaElement {
+       ^
+../src/ListaElement.h:4:7: note:   candidate expects 1 argument, 0 provided
+src/subdir.mk:51: polecenia dla obiektu 'src/Lista.o' nie powiodły się
+make: *** [src/Lista.o] Błąd 1
+16:23:02 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+../src/Lista.cpp: In member function ‘void Lista::usunGdzies(int)’:
+../src/Lista.cpp:114:48: error: no matching function for call to ‘ListaElement::ListaElement()’
+          ListaElement *before=new ListaElement();
+                                                ^
+In file included from ../src/Lista.h:5:0,
+                 from ../src/Lista.cpp:2:
+../src/ListaElement.h:10:2: note: candidate: ListaElement::ListaElement(int, ListaElement*, ListaElement*)
+  ListaElement(int wartosc, ListaElement *poprzedni, ListaElement *nastepny);
+  ^
+../src/ListaElement.h:10:2: note:   candidate expects 3 arguments, 0 provided
+../src/ListaElement.h:4:7: note: candidate: constexpr ListaElement::ListaElement(const ListaElement&)
+ class ListaElement {
+       ^
+../src/ListaElement.h:4:7: note:   candidate expects 1 argument, 0 provided
+../src/Lista.cpp:115:49: error: no matching function for call to ‘ListaElement::ListaElement()’
+          ListaElement *current=new ListaElement();
+                                                 ^
+In file included from ../src/Lista.h:5:0,
+                 from ../src/Lista.cpp:2:
+../src/ListaElement.h:10:2: note: candidate: ListaElement::ListaElement(int, ListaElement*, ListaElement*)
+  ListaElement(int wartosc, ListaElement *poprzedni, ListaElement *nastepny);
+  ^
+../src/ListaElement.h:10:2: note:   candidate expects 3 arguments, 0 provided
+../src/ListaElement.h:4:7: note: candidate: constexpr ListaElement::ListaElement(const ListaElement&)
+ class ListaElement {
+       ^
+../src/ListaElement.h:4:7: note:   candidate expects 1 argument, 0 provided
+src/subdir.mk:51: polecenia dla obiektu 'src/Lista.o' nie powiodły się
+make: *** [src/Lista.o] Błąd 1
+16:24:51 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+Finished building: ../src/Lista.cpp
+ 
+Building file: ../src/ListaElement.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ListaElement.d" -MT"src/ListaElement.o" -o "src/ListaElement.o" "../src/ListaElement.cpp"
+Finished building: ../src/ListaElement.cpp
+ 
+Building file: ../src/SDiZO Project.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SDiZO Project.d" -MT"src/SDiZO\ Project.d" -o "src/SDiZO Project.o" "../src/SDiZO Project.cpp"
+../src/SDiZO Project.cpp: In function ‘int main(int, char**)’:
+../src/SDiZO Project.cpp:15:23: warning: unused variable ‘testowaniePojedyncze’ [-Wunused-variable]
+  TestowaniePojedyncze testowaniePojedyncze;
+                       ^
+Finished building: ../src/SDiZO Project.cpp
+ 
+Building file: ../src/Testowanie.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Testowanie.d" -MT"src/Testowanie.o" -o "src/Testowanie.o" "../src/Testowanie.cpp"
+Finished building: ../src/Testowanie.cpp
+ 
+Building file: ../src/TestowaniePojedyncze.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TestowaniePojedyncze.d" -MT"src/TestowaniePojedyncze.o" -o "src/TestowaniePojedyncze.o" "../src/TestowaniePojedyncze.cpp"
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieKopca(Kopiec)’:
+../src/TestowaniePojedyncze.cpp:284:6: warning: unused variable ‘index’ [-Wunused-variable]
+  int index = 0;
+      ^
+../src/TestowaniePojedyncze.cpp: In member function ‘void TestowaniePojedyncze::testowanieDrzewa(Drzewo)’:
+../src/TestowaniePojedyncze.cpp:363:6: warning: unused variable ‘index’ [-Wunused-variable]
+  int index = 0;
+      ^
+Finished building: ../src/TestowaniePojedyncze.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+16:43:11 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+../src/Kopiec.cpp:82:1: error: ‘h’ does not name a type
+ h
+ ^
+make: *** [src/Kopiec.o] Błąd 1
+src/subdir.mk:51: polecenia dla obiektu 'src/Kopiec.o' nie powiodły się
+16:43:22 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+16:48:51 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+Finished building: ../src/Lista.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+16:51:06 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+../src/Lista.cpp: In member function ‘void Lista::dodajGdzies(int, int)’:
+../src/Lista.cpp:37:6: error: expected ‘;’ before ‘}’ token
+      }
+      ^
+src/subdir.mk:51: polecenia dla obiektu 'src/Lista.o' nie powiodły się
+make: *** [src/Lista.o] Błąd 1
+16:51:35 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+Finished building: ../src/Lista.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+17:08:54 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+17:12:28 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Kopiec.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kopiec.d" -MT"src/Kopiec.o" -o "src/Kopiec.o" "../src/Kopiec.cpp"
+Finished building: ../src/Kopiec.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+17:12:38 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+17:16:58 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Lista.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lista.d" -MT"src/Lista.o" -o "src/Lista.o" "../src/Lista.cpp"
+Finished building: ../src/Lista.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+17:17:51 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+17:18:45 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+17:21:57 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+17:22:15 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Generator.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Generator.d" -MT"src/Generator.o" -o "src/Generator.o" "../src/Generator.cpp"
+Finished building: ../src/Generator.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+17:22:21 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+17:22:28 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Generator.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Generator.d" -MT"src/Generator.o" -o "src/Generator.o" "../src/Generator.cpp"
+Finished building: ../src/Generator.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+17:23:09 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+17:23:19 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+Building file: ../src/Generator.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++11 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Generator.d" -MT"src/Generator.o" -o "src/Generator.o" "../src/Generator.cpp"
+Finished building: ../src/Generator.cpp
+ 
+Building target: SDiZO Project
+Invoking: GCC C++ Linker
+g++  -o "SDiZO Project"  ./src/Drzewo.o ./src/DrzewoElement.o ./src/Generator.o ./src/Kopiec.o ./src/Lista.o ./src/ListaElement.o ./src/MierzenieCzasu.o ./src/SDiZO\ Project.o ./src/Tablica.o ./src/Testowanie.o ./src/TestowaniePojedyncze.o ./src/ZapisanieRezultatow.o   
+Finished building target: SDiZO Project
+ 
+17:23:38 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.
+17:26:35 **** Incremental Build of configuration Debug for project SDiZO Project ****
+make all 
+make: Nie ma nic do zrobienia w 'all'.

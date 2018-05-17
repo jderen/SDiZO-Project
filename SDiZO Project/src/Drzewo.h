@@ -10,7 +10,7 @@ public:
 	int rozmiar;
 	DrzewoElement *korzen;
 	DrzewoElement straznik;
-	string cr,cl,cp;
+	string cr, cl, cp;
 
 	Drzewo();
 	~Drzewo();
